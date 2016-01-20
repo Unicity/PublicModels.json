@@ -1,0 +1,116 @@
+{
+	"properties": {
+		"aggregate": {
+			"properties": {
+				"quantity": {
+					"type": "integer"
+				},
+				"weight": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"items": {
+			"items": [
+				{
+					"properties": {
+						"catalogSlide": {
+							"properties": {
+								"content": {
+									"properties": {
+										"description": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								}
+							},
+							"type": "object"
+						},
+						"index": {
+							"type": "integer"
+						},
+						"item": {
+							"properties": {
+								"catalogSlide": {
+									"properties": {
+										"content": {
+											"properties": {
+												"description": {
+													"type": "string"
+												}
+											},
+											"type": "object"
+										}
+									},
+									"type": "object"
+								},
+								"href": {
+									"type": "string"
+								},
+								"id": {
+									"properties": {
+										"unicity": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"kit": {
+									"properties": {
+										"child": {
+											"properties": {
+												"indent": {
+													"type": "string"
+												}
+											},
+											"type": "object"
+										}
+									},
+									"type": "object"
+								},
+								"kitChildrenListIsEmpty": {
+									"type": "boolean"
+								},
+								"weightEach": {
+									"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
+									"type": "object"
+								}
+							},
+							"type": "object"
+						},
+						"order": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+							"type": "object"
+						},
+						"quantity": {
+							"type": "integer"
+						},
+						"terms": {
+							"properties": {
+								"priceEach": {
+									"type": "number"
+								},
+								"pv": {
+									"type": "number"
+								},
+								"pvEach": {
+									"type": "number"
+								},
+								"subtotal": {
+									"type": "number"
+								}
+							},
+							"type": "object"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

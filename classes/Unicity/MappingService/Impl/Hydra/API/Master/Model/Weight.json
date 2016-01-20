@@ -1,0 +1,15 @@
+{
+	"properties": {
+		"unit": {
+			"enum": [
+				"lbs",
+				"kg"
+			],
+			"type": "string"
+		},
+		"value": {
+			"type": "number"
+		}
+	},
+	"type": "object"
+}

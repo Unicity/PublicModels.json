@@ -1,0 +1,296 @@
+{
+	"properties": {
+		"birthAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"birthDate": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"businessEntity": {
+			"properties": {
+				"companyName": {
+					"type": "string"
+				},
+				"legalType": {
+					"enum": [
+						"Corporation",
+						"SoleProprietorship"
+					],
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"coapplicant": {
+			"properties": {
+				"details": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+					"type": "object"
+				},
+				"type": {
+					"enum": [
+						"Child",
+						"Friend",
+						"Parent",
+						"Sibling",
+						"Spouse"
+					],
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"cumulativeMetricsProfile": {
+			"properties": {
+				"highestRankShort": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"depositBankAccount": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
+			"type": "object"
+		},
+		"email": {
+			"type": "string"
+		},
+		"enroller": {
+			"properties": {
+				"href": {
+					"type": "string"
+				},
+				"id": {
+					"properties": {
+						"unicity": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"unicity": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"faxNumber": {
+			"type": "string"
+		},
+		"gender": {
+			"enum": [
+				"male",
+				"female"
+			],
+			"type": "string"
+		},
+		"homePhone": {
+			"type": "string"
+		},
+		"href": {
+			"type": "string"
+		},
+		"humanName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"id": {
+			"properties": {
+				"unicity": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"identification": {
+			"properties": {
+				"documentId": {
+					"type": "string"
+				},
+				"documentType": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"joinDate": {
+			"pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+			"type": "string"
+		},
+		"mainAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"maritalStatus": {
+			"enum": [
+				"Divorced",
+				"Married",
+				"Single",
+				"Unknown",
+				"Widowed"
+			],
+			"type": "string"
+		},
+		"metricsProfile": {
+			"properties": {
+				"gv": {
+					"type": "integer"
+				},
+				"ov": {
+					"type": "integer"
+				},
+				"pv": {
+					"type": "integer"
+				},
+				"rankShort": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+					"type": "string"
+				},
+				"tv": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
+		"metricsProfileHistory": {
+			"properties": {
+				"items": {
+					"items": [
+						{
+							"properties": {
+								"period": {
+									"pattern": "/^[0-9]{4}-[0-9]{2}$/",
+									"type": "string"
+								},
+								"value": {
+									"properties": {
+										"gv": {
+											"type": "integer"
+										},
+										"ov": {
+											"type": "integer"
+										},
+										"pv": {
+											"type": "integer"
+										},
+										"rankShort": {
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+											"type": "string"
+										},
+										"tv": {
+											"type": "integer"
+										}
+									},
+									"type": "object"
+								}
+							},
+							"type": "object"
+						}
+					],
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"mobilePhone": {
+			"type": "string"
+		},
+		"password": {
+			"properties": {
+				"value": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"preferredLocale": {
+			"type": "string"
+		},
+		"signature": {
+			"properties": {
+				"value": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"sponsor": {
+			"properties": {
+				"href": {
+					"type": "string"
+				},
+				"id": {
+					"properties": {
+						"unicity": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"unicity": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"sponsoredCustomers": {
+			"properties": {
+				"href": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"status": {
+			"enum": [
+				"Active",
+				"AwaitingPaperwork",
+				"Defective",
+				"Deleted",
+				"Pending",
+				"Retired",
+				"Suspended",
+				"Terminated"
+			],
+			"type": "string"
+		},
+		"taxTerms": {
+			"properties": {
+				"taxId": {
+					"type": "string"
+				},
+				"taxIdExpires": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"Associate",
+				"Customer",
+				"DSCEmployee",
+				"Employee",
+				"FamilyPricing",
+				"LeadSales",
+				"LegacySuspended",
+				"LegacyTerminated",
+				"MedicalProfessional",
+				"PreferredCustomer",
+				"RollupEnrollers",
+				"WholesaleCustomer"
+			],
+			"type": "string"
+		},
+		"unicity": {
+			"type": "string"
+		},
+		"workPhone": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

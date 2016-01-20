@@ -1,0 +1,95 @@
+{
+	"properties": {
+		"aggregate": {
+			"properties": {
+				"amount": {
+					"type": "number"
+				}
+			},
+			"type": "object"
+		},
+		"items": {
+			"items": [
+				{
+					"properties": {
+						"amount": {
+							"type": "number"
+						},
+						"authorization": {
+							"type": "string"
+						},
+						"billToAddress": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+							"properties": {
+								"payer": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"billToName": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+							"type": "object"
+						},
+						"method": {
+							"enum": [
+								"BankDraft",
+								"BankWire",
+								"Case",
+								"Check",
+								"Coupon",
+								"CreditCard",
+								"CreditCardAlias",
+								"StoreCredit"
+							],
+							"type": "string"
+						},
+						"methodDetails": {
+							"properties": {
+								"alias": {
+									"enum": [
+										"Primary",
+										"Secondary"
+									],
+									"type": "string"
+								},
+								"checkNumber": {
+									"type": "string"
+								},
+								"code": {
+									"type": "string"
+								},
+								"creditCardExpires": {
+									"type": "string"
+								},
+								"creditCardNumber": {
+									"type": "string"
+								},
+								"creditCardSecurityCode": {
+									"type": "string"
+								},
+								"payer": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"type": {
+							"enum": [
+								"AuthorizeAndCapture",
+								"Capture",
+								"IOU",
+								"Record",
+								"record"
+							],
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

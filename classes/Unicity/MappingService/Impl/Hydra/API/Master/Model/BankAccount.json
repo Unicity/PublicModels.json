@@ -1,0 +1,36 @@
+{
+	"properties": {
+		"accountHolder": {
+			"type": "string"
+		},
+		"accountNumber": {
+			"type": "string"
+		},
+		"accountType": {
+			"type": "string"
+		},
+		"bankName": {
+			"type": "string"
+		},
+		"bic": {
+			"description": "SWIFT code",
+			"type": "string"
+		},
+		"bin": {
+			"type": "string"
+		},
+		"branchName": {
+			"type": "string"
+		},
+		"branchNumber": {
+			"type": "string"
+		},
+		"iban": {
+			"type": "string"
+		},
+		"routingNumber": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

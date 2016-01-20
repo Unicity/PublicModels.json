@@ -1,0 +1,24 @@
+{
+	"enum": [
+		"BA",
+		"FP",
+		"PC",
+		"As",
+		"Asc",
+		"Mbr",
+		"Ph1",
+		"Dst",
+		"JrM",
+		"Mgr",
+		"SrM",
+		"ExM",
+		"Dir",
+		"SrD",
+		"ExD",
+		"PrD",
+		"PrS",
+		"PrR",
+		"DIA"
+	],
+	"type": "string"
+}

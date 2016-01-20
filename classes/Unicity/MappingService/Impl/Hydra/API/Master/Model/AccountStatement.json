@@ -1,0 +1,88 @@
+{
+	"properties": {
+		"items": {
+			"items": [
+				{
+					"properties": {
+						"currency": {
+							"pattern": "/^[A-Z]{3}$/",
+							"type": "string"
+						},
+						"lines": {
+							"properties": {
+								"items": {
+									"items": [
+										{
+											"properties": {
+												"date": {
+													"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}$/",
+													"type": "string"
+												},
+												"entry": {
+													"properties": {
+														"accountCredited": {
+															"type": "mixed"
+														},
+														"accountDebited": {
+															"type": "mixed"
+														},
+														"amount": {
+															"type": "number"
+														},
+														"currency": {
+															"pattern": "/^[A-Z]{3}$/",
+															"type": "string"
+														},
+														"entryId": {
+															"type": "string"
+														},
+														"notes": {
+															"type": "string"
+														},
+														"reference": {
+															"properties": {
+																"id": {
+																	"properties": {
+																		"unicity": {
+																			"type": "string"
+																		}
+																	},
+																	"type": "object"
+																}
+															},
+															"type": "object"
+														}
+													},
+													"type": "object"
+												},
+												"pvAmount": {
+													"type": "number"
+												},
+												"runningBalance": {
+													"type": "number"
+												}
+											},
+											"type": "object"
+										}
+									],
+									"type": "array"
+								}
+							},
+							"type": "object"
+						},
+						"period": {
+							"pattern": "/^[0-9]{4}-[0-9]{2}$/",
+							"type": "string"
+						},
+						"startingBalance": {
+							"type": "number"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

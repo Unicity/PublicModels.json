@@ -1,0 +1,11 @@
+{
+	"properties": {
+		"amount": {
+			"type": "number"
+		},
+		"percentage": {
+			"type": "number"
+		}
+	},
+	"type": "object"
+}

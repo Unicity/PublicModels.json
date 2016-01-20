@@ -1,0 +1,123 @@
+{
+	"properties": {
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
+		"currency": {
+			"pattern": "/^[A-Z]{3}$/",
+			"type": "string"
+		},
+		"customer": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"dateCreated": {
+			"type": "string"
+		},
+		"id": {
+			"properties": {
+				"barcode": {
+					"type": "string"
+				},
+				"unicity": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"invoice": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Invoice",
+			"type": "object"
+		},
+		"lines": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
+			"type": "object"
+		},
+		"market": {
+			"pattern": "/^[A-Z]{2}$/",
+			"type": "string"
+		},
+		"notes": {
+			"type": "string"
+		},
+		"recurrence": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
+			"type": "object"
+		},
+		"shipToAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"shipToEmail": {
+			"type": "string"
+		},
+		"shipToName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"shipToPhone": {
+			"type": "string"
+		},
+		"shipments": {
+			"properties": {
+				"items": {
+					"items": [
+						{
+							"id": {
+								"properties": {
+									"barcode": {
+										"type": "string"
+									},
+									"unicity": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"shippingMethod": {
+								"properties": {
+									"location": {
+										"type": "string"
+									},
+									"type": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							}
+						}
+					],
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"shippingMethod": {
+			"properties": {
+				"href": {
+					"type": "string"
+				},
+				"location": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"source": {
+			"type": "string"
+		},
+		"terms": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
+			"type": "object"
+		},
+		"transactions": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

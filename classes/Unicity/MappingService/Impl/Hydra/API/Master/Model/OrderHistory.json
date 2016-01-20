@@ -1,0 +1,88 @@
+{
+	"properties": {
+		"items": {
+			"items": [
+				{
+					"properties": {
+						"creator": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+							"type": "object"
+						},
+						"customer": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+							"type": "object"
+						},
+						"dateCreated": {
+							"pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+							"type": "string"
+						},
+						"id": {
+							"properties": {
+								"unicity": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"recurrence": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
+							"type": "object"
+						},
+						"shipToName": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+							"type": "object"
+						},
+						"shipments": {
+							"properties": {
+								"aggregate": {
+									"properties": {
+										"lines": {
+											"properties": {
+												"aggregate": {
+													"properties": {
+														"quantity": {
+															"type": "integer"
+														}
+													},
+													"type": "object"
+												}
+											},
+											"type": "object"
+										}
+									},
+									"type": "object"
+								},
+								"items": {
+									"items": [
+										{
+											"properties": {
+												"dateShipped": {
+													"pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+													"type": "string"
+												}
+											},
+											"type": "object"
+										}
+									],
+									"type": "array"
+								}
+							},
+							"type": "object"
+						},
+						"terms": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
+							"type": "object"
+						},
+						"transactions": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
+							"type": "object"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

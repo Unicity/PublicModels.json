@@ -1,0 +1,17 @@
+{
+	"items": [
+		{
+			"properties": {
+				"customer": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+					"type": "object"
+				},
+				"treeDepth": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		}
+	],
+	"type": "array"
+}

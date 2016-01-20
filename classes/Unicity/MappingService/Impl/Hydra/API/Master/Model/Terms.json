@@ -1,0 +1,40 @@
+{
+	"properties": {
+		"discount": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+			"type": "object"
+		},
+		"freight": {
+			"properties": {
+				"amount": {
+					"type": "number"
+				}
+			},
+			"type": "object"
+		},
+		"period": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"pretotal": {
+			"type": "number"
+		},
+		"pv": {
+			"type": "number"
+		},
+		"subtotal": {
+			"type": "number"
+		},
+		"tax": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+			"type": "object"
+		},
+		"taxableTotal": {
+			"type": "number"
+		},
+		"total": {
+			"type": "number"
+		}
+	},
+	"type": "object"
+}

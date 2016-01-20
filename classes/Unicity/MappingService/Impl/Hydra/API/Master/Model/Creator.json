@@ -1,0 +1,17 @@
+{
+	"properties": {
+		"humanName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"id": {
+			"properties": {
+				"unicity": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

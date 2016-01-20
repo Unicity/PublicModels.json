@@ -1,0 +1,35 @@
+{
+	"properties": {
+		"dateEnds": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"dateNext": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"dateStarts": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"schedule": {
+			"properties": {
+				"dayOfMonth": {
+					"type": "integer"
+				},
+				"month": {
+					"type": "start"
+				}
+			},
+			"type": "object"
+		},
+		"status": {
+			"enum": [
+				"Enabled",
+				"Disabled"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
