@@ -34,19 +34,6 @@
 						},
 						"item": {
 							"properties": {
-								"catalogSlide": {
-									"properties": {
-										"content": {
-											"properties": {
-												"description": {
-													"type": "string"
-												}
-											},
-											"type": "object"
-										}
-									},
-									"type": "object"
-								},
 								"href": {
 									"type": "string"
 								},
@@ -80,6 +67,46 @@
 								}
 							},
 							"type": "object"
+						},
+						"kitChildren": {
+							"items": [
+								{
+									"properties": {
+										"item": {
+											"properties": {
+												"href": {
+													"type": "string"
+												},
+												"id": {
+													"properties": {
+														"unicity": {
+															"type": "string"
+														}
+													},
+													"type": "object"
+												}
+											},
+											"type": "object"
+										},
+										"quantity": {
+											"type": "integer"
+										},
+										"terms": {
+											"properties": {
+												"priceEach": {
+													"type": "number"
+												},
+												"pvEach": {
+													"type": "number"
+												}
+											},
+											"type": "object"
+										}
+									},
+									"type": "object"
+								}
+							],
+							"type": "array"
 						},
 						"order": {
 							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
