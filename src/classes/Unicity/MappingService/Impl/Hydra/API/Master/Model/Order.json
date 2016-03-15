@@ -103,6 +103,9 @@
 				},
 				"type": {
 					"type": "string"
+				},
+				"warehouseUUID": {
+					"type": "string"
 				}
 			},
 			"type": "object"
