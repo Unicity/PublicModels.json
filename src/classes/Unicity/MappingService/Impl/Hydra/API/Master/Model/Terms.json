@@ -32,6 +32,10 @@
 		"taxableTotal": {
 			"type": "number"
 		},
+		"timbre": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+			"type": "object"
+		},
 		"total": {
 			"type": "number"
 		}
