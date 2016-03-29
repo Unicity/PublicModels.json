@@ -15,6 +15,7 @@
 				},
 				"legalType": {
 					"enum": [
+						"Association",
 						"Corporation",
 						"SoleProprietorship"
 					],
