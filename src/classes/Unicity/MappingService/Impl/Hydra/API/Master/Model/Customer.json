@@ -56,6 +56,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
 			"type": "object"
 		},
+		"draftBankAccount": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
+			"type": "object"
+		},
 		"email": {
 			"type": "string"
 		},
