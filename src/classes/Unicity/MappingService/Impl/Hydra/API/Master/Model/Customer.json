@@ -214,6 +214,29 @@
 		"preferredLocale": {
 			"type": "string"
 		},
+		"rights": {
+			"items": [
+				{
+					"properties": {
+						"holder": {
+							"enum": [
+								"Upline",
+								"Unicity"
+							],
+							"type": "string"
+						},
+						"type": {
+							"enum": [
+								"SendEmails"
+							],
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
 		"signature": {
 			"properties": {
 				"value": {

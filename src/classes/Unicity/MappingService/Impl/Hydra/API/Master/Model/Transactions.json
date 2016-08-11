@@ -35,7 +35,7 @@
 							"enum": [
 								"BankDraft",
 								"BankWire",
-								"Case",
+								"Cash",
 								"Check",
 								"Coupon",
 								"CreditCard",
