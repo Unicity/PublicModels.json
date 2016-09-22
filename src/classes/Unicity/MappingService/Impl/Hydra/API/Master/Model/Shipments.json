@@ -1,0 +1,40 @@
+{
+	"properties": {
+		"items": {
+			"items": [
+				{
+					"properties" : {
+						"id": {
+							"properties": {
+								"barcode": {
+									"type": "string"
+								},
+								"unicity": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"shippingMethod": {
+							"properties": {
+								"location": {
+									"type": "string"
+								},
+								"type": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"trackingNumber": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

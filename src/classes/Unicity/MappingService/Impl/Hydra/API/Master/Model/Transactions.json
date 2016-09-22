@@ -74,9 +74,6 @@
 							},
 							"type": "object"
 						},
-						"trackingNumber": {
-							"type": "string"
-						},
 						"type": {
 							"enum": [
 								"AuthorizeAndCapture",

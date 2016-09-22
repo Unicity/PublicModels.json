@@ -60,37 +60,7 @@
 			"type": "string"
 		},
 		"shipments": {
-			"properties": {
-				"items": {
-					"items": [
-						{
-							"id": {
-								"properties": {
-									"barcode": {
-										"type": "string"
-									},
-									"unicity": {
-										"type": "string"
-									}
-								},
-								"type": "object"
-							},
-							"shippingMethod": {
-								"properties": {
-									"location": {
-										"type": "string"
-									},
-									"type": {
-										"type": "string"
-									}
-								},
-								"type": "object"
-							}
-						}
-					],
-					"type": "array"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Shipments",
 			"type": "object"
 		},
 		"shippingMethod": {
