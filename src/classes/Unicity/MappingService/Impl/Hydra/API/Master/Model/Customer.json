@@ -203,6 +203,10 @@
 		"mobilePhone": {
 			"type": "string"
 		},
+		"notes": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Notes",
+			"type": "array"
+		},
 		"password": {
 			"properties": {
 				"value": {
@@ -320,8 +324,5 @@
 			"type": "string"
 		}
 	},
-	"required": [
-		"mainAddress"
-	],
 	"type": "object"
 }

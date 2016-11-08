@@ -27,9 +27,18 @@
 							},
 							"type": "object"
 						},
+						"billToEmail": {
+							"type": "string"
+						},
 						"billToName": {
 							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
 							"type": "object"
+						},
+						"billToPhone": {
+							"type": "string"
+						},
+						"message": {
+							"type": "string"
 						},
 						"method": {
 							"enum": [
@@ -53,6 +62,9 @@
 									],
 									"type": "string"
 								},
+								"bankName": {
+									"type": "string"
+								},
 								"checkNumber": {
 									"type": "string"
 								},
@@ -66,6 +78,40 @@
 									"type": "string"
 								},
 								"creditCardSecurityCode": {
+									"type": "string"
+								},
+								"iouGateway": {
+									"type": "string"
+								},
+								"iouExpires": {
+									"type": "string"
+								},
+								"iouReceipt": {
+									"properties": {
+										"href": {
+											"type": "string"
+										},
+										"id": {
+											"properties": {
+												"vendor": {
+													"type": "string"
+												}
+											},
+											"type": "object"
+										}
+									},
+									"type": "object"
+								},
+								"iouStatus": {
+									"enum": [
+										"APPROVED",
+										"CANCELED",
+										"DECLINED",
+										"EXPIRED",
+										"PENDING",
+										"REFUNDED",
+										"UNKNOWN"
+									],
 									"type": "string"
 								},
 								"payer": {

@@ -15,6 +15,9 @@
 		"dateCreated": {
 			"type": "string"
 		},
+		"description": {
+			"type": "string"
+		},
 		"id": {
 			"properties": {
 				"barcode": {

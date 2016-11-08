@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"Remote-Addr": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

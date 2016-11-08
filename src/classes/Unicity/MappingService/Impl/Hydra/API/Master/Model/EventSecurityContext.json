@@ -1,0 +1,25 @@
+{
+	"properties": {
+		"Authorization": {
+			"type": "string"
+		},
+		"availablePermissions": {
+			"properties": {
+				"customer": {
+					"type": "string"
+				},
+				"dscEmployee": {
+					"type": "string"
+				},
+				"employee": {
+					"type": "string"
+				},
+				"user": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object"
+}
