@@ -69,11 +69,7 @@
 					"type": "string"
 				},
 				"id": {
-					"properties": {
-						"unicity": {
-							"type": "string"
-						}
-					},
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 					"type": "object"
 				},
 				"unicity": {
@@ -103,11 +99,7 @@
 			"type": "object"
 		},
 		"id": {
-			"properties": {
-				"unicity": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
 		},
 		"identification": {
@@ -255,11 +247,7 @@
 					"type": "string"
 				},
 				"id": {
-					"properties": {
-						"unicity": {
-							"type": "string"
-						}
-					},
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 					"type": "object"
 				},
 				"unicity": {

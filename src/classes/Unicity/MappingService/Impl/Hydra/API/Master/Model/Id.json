@@ -1,15 +1,12 @@
 {
 	"properties": {
-		"Accept-Language": {
+		"barcode": {
 			"type": "string"
 		},
-		"Affiliation": {
+		"unicity": {
 			"type": "string"
 		},
-		"Remote-Addr": {
-			"type": "string"
-		},
-		"Response-Addr": {
+		"vendor": {
 			"type": "string"
 		}
 	},

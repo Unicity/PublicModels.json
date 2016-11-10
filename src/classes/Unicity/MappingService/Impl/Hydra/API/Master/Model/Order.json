@@ -19,14 +19,7 @@
 			"type": "string"
 		},
 		"id": {
-			"properties": {
-				"barcode": {
-					"type": "string"
-				},
-				"unicity": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
 		},
 		"invoice": {

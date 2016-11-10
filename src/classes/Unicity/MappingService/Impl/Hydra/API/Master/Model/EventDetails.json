@@ -1,0 +1,12 @@
+{
+	"properties": {
+		"inquiry": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"template": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

@@ -8,11 +8,7 @@
 			"type": "string"
 		},
 		"id": {
-			"properties": {
-				"unicity": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
 		},
 		"logo": {

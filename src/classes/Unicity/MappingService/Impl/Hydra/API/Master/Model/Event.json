@@ -1,24 +1,19 @@
 {
 	"properties": {
-		"callback": {
-			"properties": {
-				"href": {
-					"type": "string"
-				}
-			},
-			"type": "object"
-		},
 		"eventContext": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventContext",
+			"type": "object"
+		},
+		"eventDetails": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventDetails",
 			"type": "object"
 		},
 		"eventSecurityContext": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventSecurityContext",
 			"type": "object"
 		},
-		"order": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
-			"type": "object"
+		"eventType": {
+			"type": "string"
 		}
 	},
 	"type": "object"

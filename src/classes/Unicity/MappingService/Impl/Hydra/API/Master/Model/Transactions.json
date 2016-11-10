@@ -92,11 +92,7 @@
 											"type": "string"
 										},
 										"id": {
-											"properties": {
-												"vendor": {
-													"type": "string"
-												}
-											},
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 											"type": "object"
 										}
 									},
@@ -126,7 +122,8 @@
 								"Capture",
 								"IOU",
 								"Record",
-								"record"
+								"record",
+								"Solicit"
 							],
 							"type": "string"
 						}

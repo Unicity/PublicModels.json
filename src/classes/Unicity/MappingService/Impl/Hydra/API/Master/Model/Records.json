@@ -1,0 +1,45 @@
+{
+	"items": [
+		{
+			"properties": {
+				"awsRegion": {
+					"type": "string"
+				},
+				"eventID": {
+					"type": "string"
+				},
+				"eventName": {
+					"type": "string"
+				},
+				"eventSource": {
+					"type": "string"
+				},
+				"eventSourceARN": {
+					"type": "string"
+				},
+				"eventVersion": {
+					"type": "string"
+				},
+				"invokeIdentityArn": {
+					"type": "string"
+				},
+				"kinesis":{
+					"data": {
+						"type": "string"
+					},
+					"kinesisSchemaVersion": {
+						"type": "string"
+					},
+					"partitionKey": {
+						"type": "string"
+					},
+					"sequenceNumber": {
+						"type": "string"
+					}
+				}
+			},
+			"type": "object"
+		}
+	],
+	"type": "array"
+}
