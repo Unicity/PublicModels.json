@@ -45,6 +45,7 @@
 								"BankDraft",
 								"BankWire",
 								"Cash",
+								"Change",
 								"Check",
 								"Coupon",
 								"CreditCard",
@@ -74,10 +75,25 @@
 								"creditCardExpires": {
 									"type": "string"
 								},
+								"creditCardGateway": {
+									"type": "string"
+								},
 								"creditCardNumber": {
 									"type": "string"
 								},
 								"creditCardSecurityCode": {
+									"type": "string"
+								},
+								"creditCardStatus": {
+									"enum": [
+										"APPROVED",
+										"CANCELED",
+										"DECLINED",
+										"EXPIRED",
+										"PENDING",
+										"REFUNDED",
+										"UNKNOWN"
+									],
 									"type": "string"
 								},
 								"iouGateway": {
@@ -122,8 +138,7 @@
 								"Capture",
 								"IOU",
 								"Record",
-								"record",
-								"Solicit"
+								"record"
 							],
 							"type": "string"
 						}

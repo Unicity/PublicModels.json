@@ -12,6 +12,9 @@
 		"country": {
 			"type": "string"
 		},
+		"county": {
+			"type": "string"
+		},
 		"state": {
 			"type": "string"
 		},

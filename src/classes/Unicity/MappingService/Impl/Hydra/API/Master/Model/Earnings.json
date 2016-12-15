@@ -1,0 +1,33 @@
+{
+	"items": [
+		{
+			"properties": {
+				"earnings": {
+					"type": "number"
+				},
+				"paidAmount": {
+					"type": "number"
+				},
+				"paidRankShort": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+					"type": "string"
+				},
+				"period": {
+					"type": "string"
+				},
+				"type": {
+					"enum": [
+						"Monthly",
+						"Weekly"
+					],
+					"type": "string"
+				},
+				"withheld": {
+					"type": "number"
+				}
+			},
+			"type": "object"
+		}
+	],
+	"type": "array"
+}
