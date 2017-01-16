@@ -75,7 +75,13 @@
 								"creditCardExpires": {
 									"type": "string"
 								},
+								"creditCardNumberFirst6": {
+									"type": "string"
+								},
 								"creditCardGateway": {
+									"type": "string"
+								},
+								"creditCardNumberLast4": {
 									"type": "string"
 								},
 								"creditCardNumber": {
@@ -120,6 +126,7 @@
 										"CANCELED",
 										"DECLINED",
 										"EXPIRED",
+										"NOT_FOUND",
 										"PENDING",
 										"REFUNDED",
 										"UNKNOWN"

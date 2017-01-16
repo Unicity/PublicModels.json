@@ -6,6 +6,15 @@
 					"properties": {
 						"metricsDetails": {
 							"properties": {
+								"apt": {
+									"properties": {
+										"customers": {
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+											"type": "array"
+										}
+									},
+									"type": "object"
+								},
 								"ov_leg1": {
 									"properties": {
 										"customers": {

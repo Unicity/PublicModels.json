@@ -5,6 +5,10 @@
 				"earnings": {
 					"type": "number"
 				},
+				"market": {
+					"pattern": "/^[A-Z]{2}$/",
+					"type": "string"
+				},
 				"paidAmount": {
 					"type": "number"
 				},
