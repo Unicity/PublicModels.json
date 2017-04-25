@@ -55,6 +55,9 @@
 		"shipToPhone": {
 			"type": "string"
 		},
+		"shipToTime": {
+			"type": "string"
+		},
 		"shipments": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Shipments",
 			"type": "object"
