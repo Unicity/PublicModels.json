@@ -10,10 +10,16 @@
 						},
 						"shippingMethod": {
 							"properties": {
+								"href": {
+									"type": "string"
+								},
 								"location": {
 									"type": "string"
 								},
 								"type": {
+									"type": "string"
+								},
+								"warehouseUUID": {
 									"type": "string"
 								}
 							},

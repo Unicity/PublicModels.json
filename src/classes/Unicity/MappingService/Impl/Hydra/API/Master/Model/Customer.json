@@ -133,6 +133,9 @@
 		},
 		"metricsProfile": {
 			"properties": {
+				"cpv": {
+					"type": "integer"
+				},
 				"gv": {
 					"type": "integer"
 				},
@@ -164,6 +167,9 @@
 								},
 								"value": {
 									"properties": {
+										"cpv": {
+											"type": "integer"
+										},
 										"gv": {
 											"type": "integer"
 										},
@@ -236,6 +242,34 @@
 								"ShareOrdersDataWithTravelAgency",
 								"ShareOrdersDataWithMarketingAgency"
 							],
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
+		"shipToOptions": {
+			"items": [
+				{
+					"properties": {
+						"shipToAddress": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+							"type": "object"
+						},
+						"shipToEmail": {
+							"type": "string"
+						},
+						"shipToName": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+							"type": "object"
+						},
+						"shipToOptionId": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+							"type": "object"
+						},
+						"shipToPhone": {
 							"type": "string"
 						}
 					},
