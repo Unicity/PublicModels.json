@@ -18,7 +18,8 @@
 		"PrD",
 		"PrS",
 		"PrR",
-		"DIA"
+		"DIA",
+		"DIA2"
 	],
 	"type": "string"
 }

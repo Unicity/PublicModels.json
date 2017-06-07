@@ -1,0 +1,36 @@
+{
+	"properties": {
+		"activeCustomers": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
+			"type": "object"
+		},
+		"cpv": {
+			"type": "integer"
+		},
+		"gv": {
+			"type": "integer"
+		},
+		"newCustomers": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
+			"type": "object"
+		},
+		"ov": {
+			"type": "integer"
+		},
+		"pv": {
+			"type": "integer"
+		},
+		"rankShort": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+			"type": "string"
+		},
+		"totalCustomers": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
+			"type": "object"
+		},
+		"tv": {
+			"type": "integer"
+		}
+	},
+	"type": "object"
+}

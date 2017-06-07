@@ -1,0 +1,11 @@
+{
+	"properties": {
+		"count": {
+			"type": "integer"
+		},
+		"percentage": {
+			"type": "number"
+		}
+	},
+	"type": "object"
+}

@@ -60,6 +60,14 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
 			"type": "object"
 		},
+		"downlineProfileHistoryByLevel": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\DownlineProfileHistory",
+			"type": "object"
+		},
+		"downlineProfileHistoryByRank": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\DownlineProfileHistory",
+			"type": "object"
+		},
 		"email": {
 			"type": "string"
 		},
@@ -132,70 +140,11 @@
 			"type": "string"
 		},
 		"metricsProfile": {
-			"properties": {
-				"cpv": {
-					"type": "integer"
-				},
-				"gv": {
-					"type": "integer"
-				},
-				"ov": {
-					"type": "integer"
-				},
-				"pv": {
-					"type": "integer"
-				},
-				"rankShort": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
-					"type": "string"
-				},
-				"tv": {
-					"type": "integer"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfile",
 			"type": "object"
 		},
 		"metricsProfileHistory": {
-			"properties": {
-				"items": {
-					"items": [
-						{
-							"properties": {
-								"period": {
-									"pattern": "/^[0-9]{4}-[0-9]{2}$/",
-									"type": "string"
-								},
-								"value": {
-									"properties": {
-										"cpv": {
-											"type": "integer"
-										},
-										"gv": {
-											"type": "integer"
-										},
-										"ov": {
-											"type": "integer"
-										},
-										"pv": {
-											"type": "integer"
-										},
-										"rankShort": {
-											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
-											"type": "string"
-										},
-										"tv": {
-											"type": "integer"
-										}
-									},
-									"type": "object"
-								}
-							},
-							"type": "object"
-						}
-					],
-					"type": "array"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfileHistory",
 			"type": "object"
 		},
 		"mobilePhone": {

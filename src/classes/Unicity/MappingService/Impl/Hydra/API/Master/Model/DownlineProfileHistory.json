@@ -3,7 +3,7 @@
 		"items": {
 			"items": [
 				{
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\RMA",
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\DownlineProfile",
 					"type": "object"
 				}
 			],
