@@ -274,21 +274,7 @@
 		"subscriptions": {
 			"items": [
 				{
-					"properties": {
-						"endDate": {
-							"type": "string"
-						},
-						"startDate": {
-							"type": "string"
-						},
-						"type": {
-							"enum": [
-								"Franchise",
-								"PremiumWeb"
-							],
-							"type": "string"
-						}
-					},
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Subscription",
 					"type": "object"
 				}
 			],

@@ -25,6 +25,9 @@
 		"branchNumber": {
 			"type": "string"
 		},
+		"href": {
+			"type": "string"
+		},
 		"iban": {
 			"type": "string"
 		},

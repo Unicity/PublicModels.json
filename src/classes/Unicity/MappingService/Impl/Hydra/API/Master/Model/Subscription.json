@@ -1,0 +1,22 @@
+{
+	"properties": {
+		"endDate": {
+			"type": "string"
+		},
+		"order": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+			"type": "object"
+		},
+		"startDate": {
+			"type": "string"
+		},
+		"type": {
+			"enum": [
+				"Franchise",
+				"PremiumWeb"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

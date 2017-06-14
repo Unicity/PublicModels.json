@@ -1,0 +1,199 @@
+{
+	"properties": {
+		"alias": {
+			"type": "string"
+		},
+		"content": {
+			"properties": {
+				"blog": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"facebook": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"google+": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"greeting": {
+					"type": "string"
+				},
+				"humanName": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+					"type": "object"
+				},
+				"pinterest": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"profilePicture": {
+					"properties": {
+						"sizes": {
+							"items": [
+								{
+									"properties": {
+										"media": {
+											"type": "string"
+										},
+										"size": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								}
+							],
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"story": {
+					"type": "string"
+				},
+				"twitter": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"youtube": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"customer": {
+			"properties": {
+				"achievementsHistory": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"cumulativeMetricsProfile": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"customerSite": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"depositBankAccount": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
+					"type": "object"
+				},
+				"draftBankAccount": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
+					"type": "object"
+				},
+				"href": {
+					"type": "string"
+				},
+				"humanName": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+					"type": "object"
+				},
+				"id": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+					"type": "object"
+				},
+				"mainAddress": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+					"type": "object"
+				},
+				"metricsProfile": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"metricsProfileHistory": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"orders": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"sponsoredCustomers": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"statements": {
+					"properties": {
+						"href": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"unicity": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
+		"subscription": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Subscription",
+			"type": "object"
+		},
+		"template": {
+			"properties": {
+				"name": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object"
+}
