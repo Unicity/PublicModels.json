@@ -1,11 +1,19 @@
 {
 	"properties": {
-		"endDate": {
-			"type": "string"
-		},
-		"order": {
+		"autoorder": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
 			"type": "object"
+		},
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
+		"dateCreated": {
+			"pattern-disabled": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+			"type": "string"
+		},
+		"endDate": {
+			"type": "string"
 		},
 		"startDate": {
 			"type": "string"

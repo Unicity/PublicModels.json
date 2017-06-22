@@ -1,0 +1,29 @@
+{
+	"properties": {
+		"inventoryRecords": {
+			"properties": {
+				"href": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"orders": {
+			"properties": {
+				"href": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"shippingMethods": {
+			"properties": {
+				"href": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

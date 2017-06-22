@@ -1,0 +1,98 @@
+{
+	"properties": {
+		"countries": {
+			"items": [
+				{
+					"properties": {
+						"alpha2": {
+							"type": "string"
+						},
+						"alpha3": {
+							"type": "string"
+						},
+						"code": {
+							"type": "string"
+						},
+						"currencies": {
+							"items": [
+								{
+									"properties": {
+										"code": {
+											"type": "string"
+										},
+										"default": {
+											"type": "boolean"
+										},
+										"labels": {
+											"items": [
+												{
+													"type": "string"
+												}
+											],
+											"type": "array"
+										},
+										"name": {
+											"type": "string"
+										},
+										"name@en": {
+											"type": "string"
+										},
+										"symbol": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								}
+							],
+							"type": "array"
+						},
+						"labels": {
+							"items": [
+								{
+									"type": "string"
+								}
+							],
+							"type": "array"
+						},
+						"languages": {
+							"items": [
+								{
+									"properties": {
+										"code": {
+											"type": "string"
+										},
+										"default": {
+											"type": "boolean"
+										},
+										"labels": {
+											"items": [
+												{
+													"type": "string"
+												}
+											],
+											"type": "array"
+										},
+										"name": {
+											"type": "string"
+										},
+										"name@en": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								}
+							],
+							"type": "array"
+						},
+						"name": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

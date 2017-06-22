@@ -1,0 +1,34 @@
+{
+	"properties": {
+		"customer": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"dscEmployee": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"employee": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"href": {
+			"type": "string"
+		},
+		"loginTokenSecondsLeft": {
+			"type": "integer"
+		},
+		"permissions": {
+			"items": [
+				{
+					"type": "string"
+				}
+			],
+			"type": "array"
+		},
+		"username": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
