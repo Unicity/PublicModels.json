@@ -18,6 +18,9 @@
 		"taxTerms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxTerms",
 			"type": "object"
+		},
+		"workPhone": {
+			"type": "string"
 		}
 	},
 	"type": "object"
