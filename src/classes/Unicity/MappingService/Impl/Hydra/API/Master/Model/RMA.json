@@ -53,20 +53,7 @@
 			"type": "string"
 		},
 		"shippingMethod": {
-			"properties": {
-				"href": {
-					"type": "string"
-				},
-				"location": {
-					"type": "string"
-				},
-				"type": {
-					"type": "string"
-				},
-				"warehouseUUID": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\ShippingMethod",
 			"type": "object"
 		},
 		"source": {

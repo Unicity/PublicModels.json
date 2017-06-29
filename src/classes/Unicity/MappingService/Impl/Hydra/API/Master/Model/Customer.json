@@ -9,19 +9,7 @@
 			"type": "string"
 		},
 		"businessEntity": {
-			"properties": {
-				"companyName": {
-					"type": "string"
-				},
-				"legalType": {
-					"enum": [
-						"Association",
-						"Corporation",
-						"SoleProprietorship"
-					],
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BusinessEntity",
 			"type": "object"
 		},
 		"coapplicant": {
@@ -41,6 +29,10 @@
 					"type": "string"
 				}
 			},
+			"type": "object"
+		},
+		"coach": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Coach",
 			"type": "object"
 		},
 		"cumulativeMetricsProfile": {
@@ -72,18 +64,7 @@
 			"type": "string"
 		},
 		"enroller": {
-			"properties": {
-				"href": {
-					"type": "string"
-				},
-				"id": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-					"type": "object"
-				},
-				"unicity": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Sponsor",
 			"type": "object"
 		},
 		"faxNumber": {
@@ -167,37 +148,7 @@
 			"type": "string"
 		},
 		"rights": {
-			"items": [
-				{
-					"properties": {
-						"holder": {
-							"enum": [
-								"Downline",
-								"Upline",
-								"Unicity"
-							],
-							"type": "string"
-						},
-						"type": {
-							"enum": [
-								"SendEmails",
-								"SendMail",
-								"SendMarketingEmail",
-								"SendMarketingMail",
-								"SendMarketingSms",
-								"SendNoticeEmail",
-								"SendNoticeSms",
-								"SendSms",
-								"ShareOrdersDataWithEventsAgency",
-								"ShareOrdersDataWithTravelAgency",
-								"ShareOrdersDataWithMarketingAgency"
-							],
-							"type": "string"
-						}
-					},
-					"type": "object"
-				}
-			],
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rights",
 			"type": "array"
 		},
 		"shipToOptions": {
@@ -237,18 +188,7 @@
 			"type": "object"
 		},
 		"sponsor": {
-			"properties": {
-				"href": {
-					"type": "string"
-				},
-				"id": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-					"type": "object"
-				},
-				"unicity": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Sponsor",
 			"type": "object"
 		},
 		"sponsoredCustomers": {
@@ -282,49 +222,7 @@
 			"type": "array"
 		},
 		"taxTerms": {
-			"properties": {
-				"exemptions": {
-					"items": [
-						{
-							"properties": {
-								"description": {
-									"type": "string"
-								},
-								"endDate": {
-									"type": "string"
-								},
-								"exemptionId": {
-									"type": "string"
-								},
-								"jurisdiction": {
-									"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
-									"type": "object"
-								},
-								"startDate": {
-									"type": "string"
-								},
-								"type": {
-									"enum": [
-										"Federal",
-										"State",
-										"County",
-										"City"
-									],
-									"type": "string"
-								}
-							},
-							"type": "object"
-						}
-					],
-					"type": "array"
-				},
-				"taxId": {
-					"type": "string"
-				},
-				"taxIdExpires": {
-					"type": "string"
-				}
-			},
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxTerms",
 			"type": "object"
 		},
 		"type": {

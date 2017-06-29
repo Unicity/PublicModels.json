@@ -1,0 +1,46 @@
+{
+	"properties": {
+		"exemptions": {
+			"items": [
+				{
+					"properties": {
+						"description": {
+							"type": "string"
+						},
+						"endDate": {
+							"type": "string"
+						},
+						"exemptionId": {
+							"type": "string"
+						},
+						"jurisdiction": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+							"type": "object"
+						},
+						"startDate": {
+							"type": "string"
+						},
+						"type": {
+							"enum": [
+								"Federal",
+								"State",
+								"County",
+								"City"
+							],
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
+		"taxId": {
+			"type": "string"
+		},
+		"taxIdExpires": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

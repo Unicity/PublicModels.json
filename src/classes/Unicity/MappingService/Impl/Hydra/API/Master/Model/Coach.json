@@ -1,0 +1,16 @@
+{
+	"properties": {
+		"href": {
+			"type": "string"
+		},
+		"humanName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

@@ -1,0 +1,34 @@
+{
+	"items": [
+		{
+			"properties": {
+				"holder": {
+					"enum": [
+						"Downline",
+						"Upline",
+						"Unicity"
+					],
+					"type": "string"
+				},
+				"type": {
+					"enum": [
+						"SendEmails",
+						"SendMail",
+						"SendMarketingEmail",
+						"SendMarketingMail",
+						"SendMarketingSms",
+						"SendNoticeEmail",
+						"SendNoticeSms",
+						"SendSms",
+						"ShareOrdersDataWithEventsAgency",
+						"ShareOrdersDataWithTravelAgency",
+						"ShareOrdersDataWithMarketingAgency"
+					],
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	],
+	"type": "array"
+}

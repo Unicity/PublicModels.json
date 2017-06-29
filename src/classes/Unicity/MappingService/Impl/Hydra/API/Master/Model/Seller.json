@@ -1,0 +1,24 @@
+{
+	"properties": {
+		"businessEntity": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BusinessEntity",
+			"type": "object"
+		},
+		"href": {
+			"type": "string"
+		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"mainAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"taxTerms": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxTerms",
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

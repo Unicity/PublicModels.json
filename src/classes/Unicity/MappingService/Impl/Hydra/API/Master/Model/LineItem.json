@@ -1,0 +1,105 @@
+{
+	"properties": {
+		"catalogSlide": {
+			"properties": {
+				"content": {
+					"properties": {
+						"description": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"index": {
+			"type": "integer"
+		},
+		"item": {
+			"properties": {
+				"href": {
+					"type": "string"
+				},
+				"id": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+					"type": "object"
+				},
+				"kit": {
+					"properties": {
+						"child": {
+							"properties": {
+								"indent": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"kitChildrenListIsEmpty": {
+					"type": "boolean"
+				},
+				"weightEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"kitChildren": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItem",
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
+		"order": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+			"type": "object"
+		},
+		"quantity": {
+			"type": "integer"
+		},
+		"quantityDetails": {
+			"properties": {
+				"quantityBackordered": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
+		"terms": {
+			"properties": {
+				"priceEach": {
+					"type": "number"
+				},
+				"pv": {
+					"type": "number"
+				},
+				"pvEach": {
+					"type": "number"
+				},
+				"subtotal": {
+					"type": "number"
+				},
+				"tax": {
+					"properties": {
+						"amount": {
+							"type": "number"
+						},
+						"categoryDescription": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object"
+}

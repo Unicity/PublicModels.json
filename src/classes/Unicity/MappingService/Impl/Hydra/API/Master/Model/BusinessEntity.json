@@ -1,0 +1,16 @@
+{
+	"properties": {
+		"companyName": {
+			"type": "string"
+		},
+		"legalType": {
+			"enum": [
+				"Association",
+				"Corporation",
+				"SoleProprietorship"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
