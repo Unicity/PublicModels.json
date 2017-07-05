@@ -1,0 +1,169 @@
+{
+	"properties": {
+		"amount": {
+			"type": "number"
+		},
+		"authorization": {
+			"type": "string"
+		},
+		"billToAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"properties": {
+				"payer": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"billToEmail": {
+			"type": "string"
+		},
+		"billToName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"billToPhone": {
+			"type": "string"
+		},
+		"message": {
+			"type": "string"
+		},
+		"method": {
+			"enum": [
+				"BankDraft",
+				"BankWire",
+				"Cash",
+				"Change",
+				"Check",
+				"Coupon",
+				"CreditCard",
+				"CreditCardAlias",
+				"StoreCredit"
+			],
+			"type": "string"
+		},
+		"methodDetails": {
+			"properties": {
+				"alias": {
+					"enum": [
+						"Primary",
+						"Secondary"
+					],
+					"type": "string"
+				},
+				"bankName": {
+					"type": "string"
+				},
+				"checkNumber": {
+					"type": "string"
+				},
+				"code": {
+					"type": "string"
+				},
+				"creditCardExpires": {
+					"type": "string"
+				},
+				"creditCardNumberFirst6": {
+					"type": "string"
+				},
+				"creditCardGateway": {
+					"type": "string"
+				},
+				"creditCardNumberLast4": {
+					"type": "string"
+				},
+				"creditCardNumber": {
+					"type": "string"
+				},
+				"creditCardSecurityCode": {
+					"type": "string"
+				},
+				"creditCardSecurityPin": {
+					"type": "string"
+				},
+				"creditCardStatus": {
+					"enum": [
+						"APPROVED",
+						"CANCELED",
+						"DECLINED",
+						"EXPIRED",
+						"PENDING",
+						"REFUNDED",
+						"UNKNOWN"
+					],
+					"type": "string"
+				},
+				"creditCardToken": {
+					"type": "string"
+				},
+				"installments": {
+					"enum": [
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"type": "integer"
+				},
+				"iouGateway": {
+					"type": "string"
+				},
+				"iouExpires": {
+					"type": "string"
+				},
+				"iouReceipt": {
+					"properties": {
+						"href": {
+							"type": "string"
+						},
+						"id": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"iouStatus": {
+					"enum": [
+						"APPROVED",
+						"CANCELED",
+						"DECLINED",
+						"EXPIRED",
+						"NOT_FOUND",
+						"PENDING",
+						"REFUNDED",
+						"UNKNOWN"
+					],
+					"type": "string"
+				},
+				"payer": {
+					"type": "string"
+				},
+				"payerId": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"AuthorizeAndCapture",
+				"Capture",
+				"IOU",
+				"Record",
+				"record"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
