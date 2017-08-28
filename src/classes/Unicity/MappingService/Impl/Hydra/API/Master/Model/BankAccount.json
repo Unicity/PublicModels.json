@@ -9,6 +9,10 @@
 		"accountType": {
 			"type": "string"
 		},
+		"bankAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
 		"bankName": {
 			"type": "string"
 		},

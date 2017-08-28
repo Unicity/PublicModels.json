@@ -1,0 +1,9 @@
+{
+	"items": [
+		{
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BankAccount",
+			"type": "object"
+		}
+	],
+	"type": "array"
+}

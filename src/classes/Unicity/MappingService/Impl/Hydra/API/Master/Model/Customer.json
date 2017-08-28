@@ -40,6 +40,10 @@
 				"highestRankShort": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
 					"type": "string"
+				},
+				"highestRankSortId": {
+					"description": "This a canonical sort id; it is NOT the id in InfoTrax.",
+					"type": "integer"
 				}
 			},
 			"type": "object"
@@ -64,10 +68,16 @@
 			"type": "string"
 		},
 		"enroller": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Sponsor",
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
 			"type": "object"
 		},
 		"faxNumber": {
+			"type": "string"
+		},
+		"favorite": {
+			"enum": [
+				"Favorite"
+			],
 			"type": "string"
 		},
 		"gender": {
@@ -132,6 +142,9 @@
 		"mobilePhone": {
 			"type": "string"
 		},
+		"nickName": {
+			"type": "string"
+		},
 		"notes": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Notes",
 			"type": "array"
@@ -188,7 +201,7 @@
 			"type": "object"
 		},
 		"sponsor": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Sponsor",
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
 			"type": "object"
 		},
 		"sponsoredCustomers": {

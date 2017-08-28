@@ -24,6 +24,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
 			"type": "string"
 		},
+		"rankSortId": {
+			"description": "This a canonical sort id; it is NOT the id in InfoTrax.",
+			"type": "integer"
+		},
 		"totalCustomers": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
 			"type": "object"
