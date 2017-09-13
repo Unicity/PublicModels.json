@@ -1,0 +1,48 @@
+{
+	"properties": {
+		"agent": {
+			"type": "string"
+		},
+		"campaign": {
+			"enum": [
+				"Event",
+				"Meeting",
+				"Recognition",
+				"Promotion"
+			],
+			"type": "string"
+		},
+		"medium": {
+			"enum": [
+				"Email",
+				"Fax",
+				"Import",
+				"InPerson",
+				"Internet",
+				"Mail",
+				"Mobile",
+				"Phone",
+				"Template"
+			],
+			"type": "string"
+		},
+		"referrer": {
+			"enum": [
+				"Marketing",
+				"Sales"
+			],
+			"type": "string"
+		},
+		"type": {
+			"enum": [
+				"Autoship",
+				"Order",
+				"{{ OrderType }}",
+				"Renewal",
+				"RMA"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

@@ -157,6 +157,32 @@
 			},
 			"type": "object"
 		},
+		"payoutDetails": {
+			"properties": {
+				"payoutDescription": {
+					"type": "string"
+				},
+				"payoutMethod": {
+					"enum": [
+						"BankWire",
+						"Check",
+						"Ewallet",
+						"StoreCredit"
+					],
+					"type": "string"
+				},
+				"payoutStatus": {
+					"enum": [
+						"Active",
+						"Defective",
+						"Pending",
+						"Suspended"
+					],
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"preferredLocale": {
 			"type": "string"
 		},

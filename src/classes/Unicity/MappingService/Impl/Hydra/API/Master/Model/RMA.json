@@ -57,13 +57,8 @@
 			"type": "object"
 		},
 		"source": {
-			"enum": [
-				"Communication",
-				"InPerson",
-				"Online",
-				"Template"
-			],
-			"type": "string"
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
+			"type": "object"
 		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
