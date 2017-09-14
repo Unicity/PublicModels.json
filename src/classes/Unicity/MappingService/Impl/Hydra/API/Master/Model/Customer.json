@@ -131,6 +131,10 @@
 			],
 			"type": "string"
 		},
+		"market": {
+			"pattern": "/^[A-Z]{2}$/",
+			"type": "string"
+		},
 		"metricsProfile": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfile",
 			"type": "object"
@@ -159,22 +163,29 @@
 		},
 		"payoutDetails": {
 			"properties": {
-				"payoutDescription": {
+				"description": {
 					"type": "string"
 				},
-				"payoutMethod": {
+				"market": {
+					"pattern": "/^[A-Z]{2}$/",
+					"type": "string"
+				},
+				"method": {
 					"enum": [
 						"BankWire",
 						"Check",
+						"DebitCard",
 						"Ewallet",
+						"None",
 						"StoreCredit"
 					],
 					"type": "string"
 				},
-				"payoutStatus": {
+				"status": {
 					"enum": [
-						"Active",
 						"Defective",
+						"Eligible",
+						"Ineligible",
 						"Pending",
 						"Suspended"
 					],
