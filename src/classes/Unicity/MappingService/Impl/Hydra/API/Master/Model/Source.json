@@ -26,6 +26,9 @@
 			],
 			"type": "string"
 		},
+		"platform": {
+			"type": "string"
+		},
 		"referrer": {
 			"enum": [
 				"Marketing",
