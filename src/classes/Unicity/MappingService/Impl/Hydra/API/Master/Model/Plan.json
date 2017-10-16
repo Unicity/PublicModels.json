@@ -1,0 +1,16 @@
+{
+	"properties": {
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"Asian",
+				"Global"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

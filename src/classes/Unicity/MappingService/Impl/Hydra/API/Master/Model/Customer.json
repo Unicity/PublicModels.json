@@ -35,6 +35,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Coach",
 			"type": "object"
 		},
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
 		"cumulativeMetricsProfile": {
 			"properties": {
 				"highestRankShort": {
