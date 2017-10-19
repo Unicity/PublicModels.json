@@ -7,6 +7,13 @@
 			"type": "string"
 		},
 		"accountType": {
+			"enum": [
+				"CheckingBusiness",
+				"CheckingPersonal",
+				"PrepaidCard",
+				"SavingsBusiness",
+				"SavingsPersonal"
+			],
 			"type": "string"
 		},
 		"bankAddress": {
