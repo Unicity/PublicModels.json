@@ -187,7 +187,8 @@
 				"Capture",
 				"IOU",
 				"Record",
-				"record"
+				"record",
+				"Refund"
 			],
 			"type": "string"
 		}

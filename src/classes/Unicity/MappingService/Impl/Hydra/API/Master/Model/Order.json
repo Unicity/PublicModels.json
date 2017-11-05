@@ -19,6 +19,17 @@
 		"description": {
 			"type": "string"
 		},
+		"fulfillmentStatus": {
+			"enum": [
+				"Unknown",
+				"Unfulfilled",
+				"Processing",
+				"PartiallyFulfilled",
+				"Fulfilled",
+				"FulfilledButCompletionUnknown"
+			],
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
@@ -36,6 +47,19 @@
 			"type": "string"
 		},
 		"notes": {
+			"type": "string"
+		},
+		"paymentStatus": {
+			"enum": [
+				"Unknown",
+				"Unpaid",
+				"Processing",
+				"PartiallyPaid",
+				"Paid",
+				"PartiallyRefunded",
+				"Refunded",
+				"Voided"
+			],
 			"type": "string"
 		},
 		"recurrence": {
@@ -82,6 +106,16 @@
 		"transactions": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
 			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"Autoship",
+				"Order",
+				"{{ OrderType }}",
+				"Renewal",
+				"RMA"
+			],
+			"type": "string"
 		}
 	},
 	"type": "object"

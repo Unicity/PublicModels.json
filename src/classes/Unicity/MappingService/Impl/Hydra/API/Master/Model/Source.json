@@ -35,16 +35,6 @@
 				"Sales"
 			],
 			"type": "string"
-		},
-		"type": {
-			"enum": [
-				"Autoship",
-				"Order",
-				"{{ OrderType }}",
-				"Renewal",
-				"RMA"
-			],
-			"type": "string"
 		}
 	},
 	"type": "object"

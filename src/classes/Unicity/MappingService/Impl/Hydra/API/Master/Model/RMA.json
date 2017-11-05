@@ -67,6 +67,16 @@
 		"transactions": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
 			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"Autoship",
+				"Order",
+				"{{ OrderType }}",
+				"Renewal",
+				"RMA"
+			],
+			"type": "string"
 		}
 	},
 	"type": "object"
