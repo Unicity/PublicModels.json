@@ -3,6 +3,9 @@
 		"barcode": {
 			"type": "string"
 		},
+		"label": {
+			"type": "string"
+		},
 		"unicity": {
 			"type": "string"
 		},

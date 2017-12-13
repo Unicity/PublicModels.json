@@ -14,6 +14,9 @@
 		},
 		"trackingNumber": {
 			"type": "string"
+		},
+		"trackingNumberHref": {
+			"type": "string"
 		}
 	},
 	"type": "object"
