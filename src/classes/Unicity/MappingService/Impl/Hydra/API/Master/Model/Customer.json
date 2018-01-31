@@ -8,9 +8,17 @@
 			"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
 			"type": "string"
 		},
+		"birthName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
 		"businessEntity": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\BusinessEntity",
 			"type": "object"
+		},
+		"citizenship": {
+			"pattern": "/^[A-Z]{2}$/",
+			"type": "string"
 		},
 		"coapplicant": {
 			"properties": {

@@ -22,6 +22,7 @@
 				"Mail",
 				"Mobile",
 				"Phone",
+				"Overrride",
 				"Template"
 			],
 			"type": "string"

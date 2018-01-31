@@ -12,6 +12,7 @@
 				},
 				"type": {
 					"enum": [
+						"Order",
 						"SendEmails",
 						"SendMail",
 						"SendMarketingEmail",
@@ -21,8 +22,8 @@
 						"SendNoticeSms",
 						"SendSms",
 						"ShareOrdersDataWithEventsAgency",
-						"ShareOrdersDataWithTravelAgency",
-						"ShareOrdersDataWithMarketingAgency"
+						"ShareOrdersDataWithMarketingAgency",
+						"ShareOrdersDataWithTravelAgency"
 					],
 					"type": "string"
 				}

@@ -3,6 +3,12 @@
 		"barcode": {
 			"type": "string"
 		},
+		"epsilon": {
+			"type": "string"
+		},
+		"iota": {
+			"type": "string"
+		},
 		"label": {
 			"type": "string"
 		},
