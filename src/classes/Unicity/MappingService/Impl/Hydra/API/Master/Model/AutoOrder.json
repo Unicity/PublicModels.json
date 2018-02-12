@@ -1,0 +1,122 @@
+{
+	"properties": {
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
+		"currency": {
+			"pattern": "/^[A-Z]{3}$/",
+			"type": "string"
+		},
+		"customer": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+			"type": "object"
+		},
+		"dateCreated": {
+			"pattern-disabled": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
+		"fulfillmentStatus": {
+			"enum": [
+				"Unknown",
+				"Unfulfilled",
+				"Processing",
+				"PartiallyFulfilled",
+				"Fulfilled",
+				"FulfilledButCompletionUnknown"
+			],
+			"type": "string"
+		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"invoice": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Invoice",
+			"type": "object"
+		},
+		"lines": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
+			"type": "object"
+		},
+		"market": {
+			"pattern": "/^[A-Z]{2}$/",
+			"type": "string"
+		},
+		"notes": {
+			"type": "string"
+		},
+		"paymentStatus": {
+			"enum": [
+				"Unknown",
+				"Unpaid",
+				"Processing",
+				"PartiallyPaid",
+				"Paid",
+				"PartiallyRefunded",
+				"Refunded",
+				"Voided"
+			],
+			"type": "string"
+		},
+		"recurrence": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
+			"type": "object"
+		},
+		"seller": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Seller",
+			"type": "object"
+		},
+		"shipToAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"shipToEmail": {
+			"type": "string"
+		},
+		"shipToName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
+		"shipToPhone": {
+			"type": "string"
+		},
+		"shipToTime": {
+			"type": "string"
+		},
+		"shipments": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Shipments",
+			"type": "object"
+		},
+		"shippingMethod": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\ShippingMethod",
+			"type": "object"
+		},
+		"source": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
+			"type": "object"
+		},
+		"terms": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
+			"type": "object"
+		},
+		"transactions": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
+			"type": "object"
+		},
+		"type": {
+			"enum": [
+				"Autoship",
+				"Order",
+				"{{ OrderType }}",
+				"Renewal",
+				"RMA"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
