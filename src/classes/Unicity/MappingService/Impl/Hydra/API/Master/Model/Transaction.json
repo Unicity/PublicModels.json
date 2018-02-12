@@ -38,6 +38,8 @@
 				"Coupon",
 				"CreditCard",
 				"CreditCardAlias",
+				"CreditCardEncrypted",
+				"CreditCardToken",
 				"StoreCredit"
 			],
 			"type": "string"
