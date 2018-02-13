@@ -92,11 +92,22 @@
 				},
 				"tax": {
 					"properties": {
+						"aggregate": {
+							"properties": {
+								"amount": {
+									"type": "number"
+								}
+							},
+							"type": "object"
+						},
 						"amount": {
 							"type": "number"
 						},
 						"categoryDescription": {
 							"type": "string"
+						},
+						"percentage": {
+							"type": "number"
 						}
 					},
 					"type": "object"
