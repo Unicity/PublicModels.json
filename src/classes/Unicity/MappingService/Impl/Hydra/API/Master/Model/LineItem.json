@@ -79,6 +79,7 @@
 		"terms": {
 			"properties": {
 				"priceEach": {
+					"description": "unit price",
 					"type": "number"
 				},
 				"pv": {
@@ -88,28 +89,11 @@
 					"type": "number"
 				},
 				"subtotal": {
+					"description": "extended price",
 					"type": "number"
 				},
 				"tax": {
-					"properties": {
-						"aggregate": {
-							"properties": {
-								"amount": {
-									"type": "number"
-								}
-							},
-							"type": "object"
-						},
-						"amount": {
-							"type": "number"
-						},
-						"categoryDescription": {
-							"type": "string"
-						},
-						"percentage": {
-							"type": "number"
-						}
-					},
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
 					"type": "object"
 				}
 			},

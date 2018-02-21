@@ -1,0 +1,24 @@
+{
+	"properties": {
+		"amount": {
+			"type": "number"
+		},
+		"jurisdiction": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"percentage": {
+			"type": "number"
+		},
+		"type": {
+			"enum": [
+				"Federal",
+				"State",
+				"County",
+				"City"
+			],
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

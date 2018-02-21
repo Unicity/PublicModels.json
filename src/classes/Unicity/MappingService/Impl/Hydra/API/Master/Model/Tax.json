@@ -1,0 +1,40 @@
+{
+	"properties": {
+		"aggregate": {
+			"properties": {
+				"amount": {
+					"type": "number"
+				},
+				"items": {
+					"items": [
+						{
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxItem",
+							"type": "object"
+						}
+					],
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"amount": {
+			"type": "number"
+		},
+		"categoryDescription": {
+			"type": "string"
+		},
+		"items": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxItem",
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
+		"percentage": {
+			"type": "number"
+		}
+	},
+	"type": "object"
+}
