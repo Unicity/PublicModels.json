@@ -82,6 +82,10 @@
 					"description": "unit price",
 					"type": "number"
 				},
+				"price": {
+					"description": "extended price",
+					"type": "number"
+				},
 				"pv": {
 					"type": "number"
 				},
