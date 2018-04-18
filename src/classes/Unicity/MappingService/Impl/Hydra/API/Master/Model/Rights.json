@@ -23,7 +23,8 @@
 						"SendSms",
 						"ShareOrdersDataWithEventsAgency",
 						"ShareOrdersDataWithMarketingAgency",
-						"ShareOrdersDataWithTravelAgency"
+						"ShareOrdersDataWithTravelAgency",
+						"SearchByArea"
 					],
 					"type": "string"
 				}

@@ -101,6 +101,15 @@
 				"creditCardNumberMasked": {
 					"type": "string"
 				},
+				"creditCardNetwork": {
+					"enum": [
+						"amex",
+						"diners",
+						"mastercard",
+						"visa"
+					],
+					"type": "string"
+				},
 				"creditCardSecurityCode": {
 					"type": "string"
 				},
@@ -182,6 +191,9 @@
 				}
 			},
 			"type": "object"
+		},
+		"transactionId": {
+			"type": "string"
 		},
 		"type": {
 			"enum": [

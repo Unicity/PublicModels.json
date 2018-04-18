@@ -22,10 +22,11 @@
 						},
 						"type": {
 							"enum": [
-								"Federal",
-								"State",
+								"City",
 								"County",
-								"City"
+								"District",
+								"Federal",
+								"State"
 							],
 							"type": "string"
 						}
