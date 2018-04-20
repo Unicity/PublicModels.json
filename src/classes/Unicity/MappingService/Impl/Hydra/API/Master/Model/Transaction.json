@@ -104,8 +104,14 @@
 				"creditCardNetwork": {
 					"enum": [
 						"amex",
+						"dankort",
 						"diners",
+						"electron",
+						"interpayment",
+						"jcb",
 						"mastercard",
+						"maestro",
+						"unionpay",
 						"visa"
 					],
 					"type": "string"
