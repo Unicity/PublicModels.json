@@ -66,7 +66,13 @@
 		},
 		"quantityDetails": {
 			"properties": {
+				"quantityAvailable": {
+					"type": "integer"
+				},
 				"quantityBackordered": {
+					"type": "integer"
+				},
+				"quantitySellable": {
 					"type": "integer"
 				}
 			},
@@ -78,12 +84,12 @@
 		},
 		"terms": {
 			"properties": {
-				"priceEach": {
-					"description": "unit price",
-					"type": "number"
-				},
 				"price": {
 					"description": "extended price",
+					"type": "number"
+				},
+				"priceEach": {
+					"description": "unit price",
 					"type": "number"
 				},
 				"pv": {

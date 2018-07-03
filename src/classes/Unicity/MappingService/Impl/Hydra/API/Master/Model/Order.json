@@ -1,5 +1,10 @@
 {
 	"properties": {
+		"added_lines": {
+			"FYI": "This field is for internal purposes only.",
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
+			"type": "object"
+		},
 		"creator": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"

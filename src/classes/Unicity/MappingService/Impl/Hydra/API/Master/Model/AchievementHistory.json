@@ -24,6 +24,15 @@
 									},
 									"type": "object"
 								},
+								"ov_leg1_apt_excluded": {
+									"properties": {
+										"customers": {
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+											"type": "array"
+										}
+									},
+									"type": "object"
+								},
 								"ov_leg2": {
 									"properties": {
 										"customers": {
@@ -33,7 +42,25 @@
 									},
 									"type": "object"
 								},
+								"ov_leg2_apt_excluded": {
+									"properties": {
+										"customers": {
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+											"type": "array"
+										}
+									},
+									"type": "object"
+								},
 								"ov_leg3hc": {
+									"properties": {
+										"customers": {
+											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+											"type": "array"
+										}
+									},
+									"type": "object"
+								},
+								"ov_leg3hc_apt_excluded": {
 									"properties": {
 										"customers": {
 											"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
@@ -80,10 +107,13 @@
 																"gv",
 																"ov_apt1",
 																"ov_leg1",
+																"ov_leg1_apt_excluded",
 																"ov",
 																"ov_leg2",
+																"ov_leg2_apt_excluded",
 																"ov_leg2hc_pv_included",
 																"ov_leg3hc_pv_excluded",
+																"ov_leg3hc_pv_excluded_apt_excluded",
 																"ov_leg3hc_pv_included",
 																"active_legs"
 															],
