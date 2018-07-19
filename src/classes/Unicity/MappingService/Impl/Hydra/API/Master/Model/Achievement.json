@@ -1,0 +1,157 @@
+{
+	"properties": {
+		"metricsDetails": {
+			"properties": {
+				"apt": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg1": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg1_apt_excluded": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg2": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg2_apt_excluded": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg3hc": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				},
+				"ov_leg3hc_apt_excluded": {
+					"properties": {
+						"customers": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customers",
+							"type": "array"
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"period": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}$/",
+			"type": "string"
+		},
+		"plan": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Plan",
+			"type": "object"
+		},
+		"value": {
+			"items": [
+				{
+					"properties": {
+						"achievement": {
+							"properties": {
+								"bonusName": {
+									"type": "string"
+								},
+								"rankShort": {
+									"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rank",
+									"type": "string"
+								},
+								"rewardName": {
+									"type": "string"
+								},
+								"rewardTrip": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						},
+						"qualified": {
+							"type": "boolean"
+						},
+						"metrics": {
+							"items": [
+								{
+									"properties": {
+										"name": {
+											"enum": [
+												"active_legs",
+												"apv",
+												"Enroll_Cust_pts",
+												"Enroll_Dist_Pts",
+												"gv",
+												"gv_1st",
+												"otherTotal",
+												"ov",
+												"ov_apt1",
+												"ov_leg1",
+												"ov_leg1_apt_excluded",
+												"ov_leg2",
+												"ov_leg2_apt_excluded",
+												"ov_leg2hc_pv_included",
+												"ov_leg3hc_pv_excluded",
+												"ov_leg3hc_pv_excluded_apt_excluded",
+												"ov_leg3hc_pv_included",
+												"pv",
+												"totalPoints",
+												"tv",
+												"tv_1st"
+											],
+											"type": "string"
+										},
+										"value": {
+											"type": "integer"
+										},
+										"requiredValue": {
+											"type": "integer"
+										},
+										"qualified": {
+											"type": "boolean"
+										}
+									},
+									"type": "object"
+								}
+							],
+							"type": "array"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

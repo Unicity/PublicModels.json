@@ -1,5 +1,14 @@
 {
 	"properties": {
+		"achievementHistory": {
+			"properties": {
+				"items": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Achievements",
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
 		"birthAddress": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"type": "object"

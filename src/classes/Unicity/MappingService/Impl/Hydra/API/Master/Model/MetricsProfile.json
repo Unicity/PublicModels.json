@@ -4,6 +4,9 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
 			"type": "object"
 		},
+		"apv": {
+			"type": "integer"
+		},
 		"cpv": {
 			"type": "integer"
 		},
