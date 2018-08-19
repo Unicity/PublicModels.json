@@ -1,6 +1,18 @@
 {
 	"properties": {
-		"constraints": {
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"patch": {
+			"properties": {
+				"order": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+					"type": "object"
+				}
+			}
+		},
+		"pattern": {
 			"properties": {
 				"eventDetails": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
@@ -8,18 +20,6 @@
 				},
 				"eventType": {
 					"type": "string"
-				}
-			}
-		},
-		"id": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-			"type": "object"
-		},
-		"offer": {
-			"properties": {
-				"order": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
-					"type": "object"
 				}
 			}
 		}
