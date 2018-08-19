@@ -2,9 +2,12 @@
 	"properties": {
 		"constraints": {
 			"properties": {
-				"order": {
+				"eventDetails": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
 					"type": "object"
+				},
+				"eventType": {
+					"type": "string"
 				}
 			}
 		},
