@@ -1,0 +1,14 @@
+{
+	"items": [
+		{
+			"properties": {
+				"promotion": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Promotion",
+					"type": "object"
+				}
+			},
+			"type": "object"
+		}
+	],
+	"type": "array"
+}

@@ -6,6 +6,17 @@
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
 					"type": "object"
 				},
+				"searchData": {
+					"properties": {
+						"foundOn": {
+							"type": "string"
+						},
+						"reference": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
 				"treeDepth": {
 					"type": "integer"
 				}

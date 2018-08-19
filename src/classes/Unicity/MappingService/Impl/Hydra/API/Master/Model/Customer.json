@@ -160,6 +160,9 @@
 			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
 		},
+		"maxUses": {
+			"type": "integer"
+		},
 		"metricsProfile": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfile",
 			"type": "object"

@@ -1,0 +1,25 @@
+{
+	"properties": {
+		"constraints": {
+			"properties": {
+				"order": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+					"type": "object"
+				}
+			}
+		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"offer": {
+			"properties": {
+				"order": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+					"type": "object"
+				}
+			}
+		}
+	},
+	"type": "object"
+}

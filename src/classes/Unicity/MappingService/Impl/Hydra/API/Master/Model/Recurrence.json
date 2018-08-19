@@ -27,6 +27,9 @@
 				},
 				"month": {
 					"type": "string"
+				},
+				"skipRepetitions": {
+					"type": "integer"
 				}
 			},
 			"type": "object"
