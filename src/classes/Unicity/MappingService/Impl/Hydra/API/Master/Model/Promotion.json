@@ -5,12 +5,8 @@
 			"type": "object"
 		},
 		"patch": {
-			"properties": {
-				"order": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
-					"type": "object"
-				}
-			}
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+			"type": "object"
 		},
 		"pattern": {
 			"properties": {
