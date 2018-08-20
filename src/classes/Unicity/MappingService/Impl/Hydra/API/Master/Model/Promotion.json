@@ -17,7 +17,8 @@
 				"eventType": {
 					"type": "string"
 				}
-			}
+			},
+			"type": "object"
 		}
 	},
 	"type": "object"
