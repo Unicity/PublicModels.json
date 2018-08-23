@@ -1,5 +1,8 @@
 {
 	"properties": {
+		"category": {
+			"type": "string"
+		},
 		"counter": {
 			"type": "integer"
 		},
@@ -7,9 +10,19 @@
 			"properties": {
 				"counter": {
 					"type": "integer"
+				},
+				"href": {
+					"type": "string"
+				},
+				"id": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+					"type": "object"
 				}
 			},
 			"type": "object"
+		},
+		"description": {
+			"type": "string"
 		},
 		"href": {
 			"type": "string"
