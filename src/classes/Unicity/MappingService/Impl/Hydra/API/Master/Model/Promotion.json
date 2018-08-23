@@ -1,5 +1,16 @@
 {
 	"properties": {
+		"counter": {
+			"type": "integer"
+		},
+		"customer": {
+			"properties": {
+				"counter": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
 		"href": {
 			"type": "string"
 		},
