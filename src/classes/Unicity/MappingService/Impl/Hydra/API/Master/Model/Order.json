@@ -51,6 +51,9 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Invoice",
 			"type": "object"
 		},
+		"limit": {
+			"type": "integer"
+		},
 		"lines": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
 			"type": "object"
@@ -58,9 +61,6 @@
 		"market": {
 			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
-		},
-		"maxUses": {
-			"type": "integer"
 		},
 		"notes": {
 			"type": "string"
