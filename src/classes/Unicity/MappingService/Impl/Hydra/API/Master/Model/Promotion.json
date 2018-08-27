@@ -3,24 +3,6 @@
 		"category": {
 			"type": "string"
 		},
-		"counter": {
-			"type": "integer"
-		},
-		"customer": {
-			"properties": {
-				"counter": {
-					"type": "integer"
-				},
-				"href": {
-					"type": "string"
-				},
-				"id": {
-					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-					"type": "object"
-				}
-			},
-			"type": "object"
-		},
 		"description": {
 			"type": "string"
 		},
@@ -43,6 +25,29 @@
 				},
 				"eventType": {
 					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"stats": {
+			"properties": {
+				"counter": {
+					"type": "integer"
+				},
+				"customer": {
+					"properties": {
+						"counter": {
+							"type": "integer"
+						},
+						"href": {
+							"type": "string"
+						},
+						"id": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+							"type": "object"
+						}
+					},
+					"type": "object"
 				}
 			},
 			"type": "object"
