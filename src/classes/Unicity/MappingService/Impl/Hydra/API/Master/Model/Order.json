@@ -119,6 +119,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
 			"type": "object"
 		},
+		"terms_override": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
+			"type": "object"
+		},
 		"transactions": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
 			"type": "object"
