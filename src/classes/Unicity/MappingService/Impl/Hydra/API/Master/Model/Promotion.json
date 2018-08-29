@@ -17,7 +17,15 @@
 			"type": "object"
 		},
 		"patch": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+			"properties": {
+				"eventDetails": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+					"type": "object"
+				},
+				"eventType": {
+					"type": "string"
+				}
+			},
 			"type": "object"
 		},
 		"pattern": {
@@ -34,23 +42,25 @@
 		},
 		"stats": {
 			"properties": {
-				"counter": {
-					"type": "integer"
-				},
-				"customer": {
-					"properties": {
-						"counter": {
-							"type": "integer"
-						},
-						"href": {
-							"type": "string"
-						},
-						"id": {
-							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-							"type": "object"
-						}
+				"eventDetails": {
+					"counter": {
+						"type": "integer"
 					},
-					"type": "object"
+					"customer": {
+						"properties": {
+							"counter": {
+								"type": "integer"
+							},
+							"href": {
+								"type": "string"
+							},
+							"id": {
+								"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+								"type": "object"
+							}
+						},
+						"type": "object"
+					}
 				}
 			},
 			"type": "object"
