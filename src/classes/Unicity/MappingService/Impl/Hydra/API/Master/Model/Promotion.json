@@ -3,6 +3,9 @@
 		"category": {
 			"type": "string"
 		},
+		"code": {
+			"type": "string"
+		},
 		"description": {
 			"type": "string"
 		},
