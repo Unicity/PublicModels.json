@@ -1,10 +1,22 @@
 {
 	"properties": {
+		"bindings": {
+			"patternProperties": {
+				"/^.+$/": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"category": {
 			"type": "string"
 		},
 		"code": {
 			"type": "string"
+		},
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
 		},
 		"description": {
 			"type": "string"
