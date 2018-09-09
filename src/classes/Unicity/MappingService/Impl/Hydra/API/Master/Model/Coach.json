@@ -10,6 +10,12 @@
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
+		},
+		"status": {
+			"enum": [
+				"Active"
+			],
+		  "type": "string"
 		}
 	},
 	"type": "object"

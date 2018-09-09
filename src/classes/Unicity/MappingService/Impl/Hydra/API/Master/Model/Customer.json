@@ -229,6 +229,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Rights",
 			"type": "array"
 		},
+		"shipToAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
 		"shipToOptions": {
 			"items": [
 				{
@@ -309,6 +313,7 @@
 				"Customer",
 				"DSCEmployee",
 				"Employee",
+				"Family",
 				"FamilyPricing",
 				"LeadSales",
 				"LegacySuspended",
