@@ -83,6 +83,9 @@
 				"Special"
 			],
 			"type": "string"
+		},
+		"version": {
+			"type": "string"
 		}
 	},
 	"type": "object"
