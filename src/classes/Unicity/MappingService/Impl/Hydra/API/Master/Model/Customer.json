@@ -237,6 +237,9 @@
 			"items": [
 				{
 					"properties": {
+						"href": {
+							"type": "string"
+						},
 						"shipToAddress": {
 							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 							"type": "object"
