@@ -43,7 +43,7 @@
 			"type": "object"
 		},
 		"market": {
-			"pattern": "/^[A-Z]{2}$/",
+			"pattern": "/^[A-Z]{2}(\\|[A-Z]{2})*$/",
 			"type": "string"
 		},
 		"notes": {
