@@ -78,6 +78,9 @@
 			},
 			"type": "object"
 		},
+		"quantityOnHand": {
+			"type": "integer"
+		},
 		"recurrence": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
 			"type": "object"
