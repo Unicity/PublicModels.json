@@ -1,7 +1,7 @@
 {
 	"properties": {
 		"autoorder": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"
 		},
 		"creator": {

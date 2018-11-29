@@ -56,6 +56,15 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"
 		},
+		"creditcardaliases": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transaction",
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
 		"cumulativeMetricsProfile": {
 			"properties": {
 				"highestRankShort": {

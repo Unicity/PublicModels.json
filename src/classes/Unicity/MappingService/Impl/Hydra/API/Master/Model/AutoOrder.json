@@ -30,6 +30,9 @@
 			],
 			"type": "string"
 		},
+		"href": {
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
