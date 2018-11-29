@@ -9,20 +9,6 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"
 		},
-		"autoorders": {
-			"properties": {
-				"items": {
-					"items": [
-						{
-							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
-							"type": "object"
-						}
-					],
-					"type": "array"
-				}
-			},
-			"type": "object"
-		},
 		"creator": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"

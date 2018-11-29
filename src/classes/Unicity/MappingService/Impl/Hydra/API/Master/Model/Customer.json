@@ -9,6 +9,20 @@
 			},
 			"type": "object"
 		},
+		"autoorders": {
+			"properties": {
+				"items": {
+					"items": [
+						{
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
+							"type": "object"
+						}
+					],
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
 		"birthAddress": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"type": "object"
