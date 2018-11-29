@@ -1,7 +1,7 @@
 {
 	"properties": {
 		"amount": {
-			"type": "number"
+			"type": "number|string"
 		},
 		"authorization": {
 			"type": "string"
