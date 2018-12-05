@@ -40,6 +40,7 @@
 			"type": "object"
 		},
 		"citizenship": {
+			"delimiter": "|",
 			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
 		},
@@ -50,6 +51,7 @@
 					"type": "object"
 				},
 				"type": {
+					"delimiter": "|",
 					"enum": [
 						"Child",
 						"Friend",
@@ -129,6 +131,7 @@
 			"type": "string"
 		},
 		"gender": {
+			"delimiter": "|",
 			"enum": [
 				"female",
 				"male",
@@ -173,6 +176,7 @@
 			"type": "object"
 		},
 		"maritalStatus": {
+			"delimiter": "|",
 			"enum": [
 				"Divorced",
 				"Married",
@@ -223,6 +227,7 @@
 					"type": "string"
 				},
 				"method": {
+					"delimiter": "|",
 					"enum": [
 						"BankWire",
 						"Check",
@@ -309,6 +314,7 @@
 			"type": "object"
 		},
 		"status": {
+			"delimiter": "|",
 			"enum": [
 				"Active",
 				"AwaitingPaperwork",

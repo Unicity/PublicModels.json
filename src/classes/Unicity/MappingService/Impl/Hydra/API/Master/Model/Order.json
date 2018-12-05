@@ -37,6 +37,7 @@
 			"type": "string"
 		},
 		"fulfillmentStatus": {
+			"delimiter": "|",
 			"enum": [
 				"Unknown",
 				"Unfulfilled",
@@ -66,13 +67,15 @@
 			"type": "object"
 		},
 		"market": {
-			"pattern": "/^[A-Z]{2}(\\|[A-Z]{2})*$/",
+			"delimiter": "|",
+			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
 		},
 		"notes": {
 			"type": "string"
 		},
 		"paymentStatus": {
+			"delimiter": "|",
 			"enum": [
 				"Unknown",
 				"Unpaid",
@@ -140,6 +143,7 @@
 			"type": "object"
 		},
 		"type": {
+			"delimiter": "|",
 			"enum": [
 				"Autoship",
 				"Order",
