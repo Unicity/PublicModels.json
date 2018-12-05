@@ -183,7 +183,8 @@
 			"type": "string"
 		},
 		"market": {
-			"pattern": "/^[A-Z]{2}(\\|[A-Z]{2})*$/",
+			"delimiter": "|",
+			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
 		},
 		"metricsProfile": {
@@ -334,6 +335,7 @@
 			"type": "object"
 		},
 		"type": {
+			"delimiter": "|",
 			"enum": [
 				"Associate",
 				"Customer",
