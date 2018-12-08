@@ -5,6 +5,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
 			"type": "object"
 		},
+		"added_transactions": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
+			"type": "object"
+		},
 		"autoorder": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"
