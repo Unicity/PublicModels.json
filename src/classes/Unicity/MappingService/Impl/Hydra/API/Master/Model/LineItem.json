@@ -41,6 +41,13 @@
 				"kitChildrenListIsEmpty": {
 					"type": "boolean"
 				},
+				"taxedAs": {
+					"enum": [
+						"goods",
+						"service"
+					],
+					"type": "string"
+				},
 				"weightEach": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
 					"type": "object"
@@ -107,6 +114,10 @@
 				},
 				"tax": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
+					"type": "object"
+				},
+				"taxEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
 					"type": "object"
 				}
 			},
