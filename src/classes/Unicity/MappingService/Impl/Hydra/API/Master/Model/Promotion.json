@@ -58,24 +58,27 @@
 		"stats": {
 			"properties": {
 				"eventDetails": {
-					"counter": {
-						"type": "integer"
-					},
-					"customer": {
-						"properties": {
-							"counter": {
-								"type": "integer"
-							},
-							"href": {
-								"type": "string"
-							},
-							"id": {
-								"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
-								"type": "object"
-							}
+					"properties": {
+						"counter": {
+							"type": "integer"
 						},
-						"type": "object"
-					}
+						"customer": {
+							"properties": {
+								"counter": {
+									"type": "integer"
+								},
+								"href": {
+									"type": "string"
+								},
+								"id": {
+									"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+									"type": "object"
+								}
+							},
+							"type": "object"
+						}
+					},
+					"type": "object"
 				}
 			},
 			"type": "object"
