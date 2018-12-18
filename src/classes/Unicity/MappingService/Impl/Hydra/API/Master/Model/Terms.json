@@ -38,6 +38,9 @@
 		},
 		"total": {
 			"type": "number"
+		},
+		"weight": {
+			"type": "number"
 		}
 	},
 	"type": "object"
