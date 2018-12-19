@@ -139,6 +139,9 @@
 			],
 			"type": "string"
 		},
+		"highestRankShort": {
+			"type": "string"
+		},
 		"homePhone": {
 			"type": "string"
 		},
@@ -252,6 +255,9 @@
 			"type": "object"
 		},
 		"preferredLocale": {
+			"type": "string"
+		},
+		"rankShort": {
 			"type": "string"
 		},
 		"rights": {
