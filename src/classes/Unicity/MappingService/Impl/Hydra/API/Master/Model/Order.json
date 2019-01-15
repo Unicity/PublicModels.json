@@ -134,6 +134,13 @@
 			],
 			"type": "string"
 		},
+		"taxedAs": {
+			"enum": [
+				"goods",
+				"service"
+			],
+			"type": "string"
+		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
 			"type": "object"
