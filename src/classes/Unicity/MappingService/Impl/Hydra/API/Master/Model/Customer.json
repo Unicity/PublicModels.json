@@ -202,6 +202,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfileHistory",
 			"type": "object"
 		},
+		"milestoneHistory": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MilestoneHistory",
+			"type": "object"
+		},
 		"mobilePhone": {
 			"type": "string"
 		},

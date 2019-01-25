@@ -1,0 +1,9 @@
+{
+	"properties": {
+		"items": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Milestone",
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

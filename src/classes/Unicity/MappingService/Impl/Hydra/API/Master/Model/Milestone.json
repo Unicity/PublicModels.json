@@ -1,0 +1,42 @@
+{
+	"properties": {
+		"achievement": {
+			"properties": {
+				"milestoneName": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"qualified": {
+			"type": "boolean"
+		},
+		"metrics": {
+			"items": [
+				{
+					"properties": {
+						"dateAchieved": {
+							"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+							"type": "string"
+						},
+						"level": {
+							"type": "integer"
+						},
+						"qualified": {
+							"type": "boolean"
+						},
+						"requiredValue": {
+							"type": "integer"
+						},
+						"value": {
+							"type": "integer"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

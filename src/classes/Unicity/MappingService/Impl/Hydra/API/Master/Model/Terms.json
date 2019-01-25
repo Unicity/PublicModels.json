@@ -8,6 +8,15 @@
 			"properties": {
 				"amount": {
 					"type": "number"
+				},
+				"terms": {
+					"properties": {
+						"tax": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
+							"type": "object"
+						}
+					},
+					"type": "object"
 				}
 			},
 			"type": "object"
