@@ -68,10 +68,6 @@
 					"type": "string"
 				},
 				"alias": {
-					"enum": [
-						"Primary",
-						"Secondary"
-					],
 					"type": "string"
 				},
 				"bankName": {
