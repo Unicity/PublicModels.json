@@ -36,6 +36,9 @@
 		"branchNumber": {
 			"type": "string"
 		},
+		"effectiveDate": {
+			"type": "string"
+		},
 		"href": {
 			"type": "string"
 		},

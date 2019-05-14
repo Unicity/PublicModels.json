@@ -112,6 +112,10 @@
 											"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
 											"type": "string"
 										},
+										"dateCalculated": {
+											"pattern-disabled": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+											"type": "string"
+										},
 										"level": {
 											"type": "integer"
 										},
@@ -119,6 +123,8 @@
 											"enum": [
 												"active_legs",
 												"apv",
+												"compressed_gv",
+												"compressed_tv",
 												"Enroll_Cust_pts",
 												"Enroll_Dist_Pts",
 												"gv",

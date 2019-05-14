@@ -9,6 +9,15 @@
 			},
 			"type": "object"
 		},
+		"achievementsHistory": {
+			"properties": {
+				"items": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Achievements",
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
 		"autoorders": {
 			"properties": {
 				"items": {

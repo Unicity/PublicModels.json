@@ -112,6 +112,9 @@
 					"description": "extended price",
 					"type": "number"
 				},
+				"taxablePriceEach": {
+					"type": "number"
+				},
 				"tax": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
 					"type": "object"
