@@ -25,6 +25,10 @@
 		"billToPhone": {
 			"type": "string"
 		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
 		"installments": {
 			"enum": [
 				0,
@@ -200,11 +204,13 @@
 		"type": {
 			"enum": [
 				"AuthorizeAndCapture",
+				"Cancel",
 				"Capture",
 				"IOU",
 				"Record",
 				"record",
-				"Refund"
+				"Refund",
+				"Void"
 			],
 			"type": "string"
 		}

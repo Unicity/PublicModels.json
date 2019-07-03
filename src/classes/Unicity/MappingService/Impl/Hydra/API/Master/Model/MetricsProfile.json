@@ -4,6 +4,9 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
 			"type": "object"
 		},
+		"active_legs": {
+			"type": "integer"
+		},
 		"apv": {
 			"type": "integer"
 		},
