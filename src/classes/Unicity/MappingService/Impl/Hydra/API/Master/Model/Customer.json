@@ -132,7 +132,9 @@
 		},
 		"events": {
 			"items": [
-				"type": "string"
+				{
+					"type": "string"
+				}
 			],
 			"type": "array"
 		},
