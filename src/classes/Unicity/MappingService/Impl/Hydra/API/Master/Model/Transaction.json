@@ -76,10 +76,27 @@
 		},
 		"methodDetails": {
 			"properties": {
+				"accountEncrypted": {
+					"properties": {
+						"envelopeKeyEncBase64": {
+							"type": "string"
+						},
+						"iv": {
+							"type": "string"
+						},
+						"transmissionEncBase64": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
 				"accountNumber": {
 					"type": "string"
 				},
 				"accountNumberMasked": {
+					"type": "string"
+				},
+				"accountToken": {
 					"type": "string"
 				},
 				"accountType": {

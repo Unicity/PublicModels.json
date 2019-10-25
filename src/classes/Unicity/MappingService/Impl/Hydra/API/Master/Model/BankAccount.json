@@ -1,5 +1,19 @@
 {
 	"properties": {
+		"accountEncrypted": {
+			"properties": {
+				"envelopeKeyEncBase64": {
+					"type": "string"
+				},
+				"iv": {
+					"type": "string"
+				},
+				"transmissionEncBase64": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"accountHolder": {
 			"type": "string"
 		},
@@ -7,6 +21,9 @@
 			"type": "string"
 		},
 		"accountNumberMasked": {
+			"type": "string"
+		},
+		"accountToken": {
 			"type": "string"
 		},
 		"accountType": {
