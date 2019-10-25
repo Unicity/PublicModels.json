@@ -53,6 +53,12 @@
 					],
 					"type": "string"
 				},
+				"servingsPerContainer": {
+					"type": "integer"
+				},
+				"servingSize": {
+					"type": "integer"
+				},
 				"weightEach": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
 					"type": "object"

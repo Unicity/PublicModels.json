@@ -9,6 +9,9 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
 			"type": "object"
 		},
+		"additionalNotes": {
+			"type": "string"
+		},
 		"autoorder": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"

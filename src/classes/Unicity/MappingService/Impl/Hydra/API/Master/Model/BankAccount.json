@@ -6,6 +6,9 @@
 		"accountNumber": {
 			"type": "string"
 		},
+		"accountNumberMasked": {
+			"type": "string"
+		},
 		"accountType": {
 			"enum": [
 				"CheckingBusiness",

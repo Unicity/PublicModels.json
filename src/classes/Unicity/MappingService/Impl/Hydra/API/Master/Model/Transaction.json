@@ -25,9 +25,17 @@
 		"billToPhone": {
 			"type": "string"
 		},
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
+		},
+		"index": {
+			"description": "payment line number",
+			"type": "integer"
 		},
 		"installments": {
 			"enum": [
@@ -69,6 +77,19 @@
 		"methodDetails": {
 			"properties": {
 				"accountNumber": {
+					"type": "string"
+				},
+				"accountNumberMasked": {
+					"type": "string"
+				},
+				"accountType": {
+					"enum": [
+						"CheckingBusiness",
+						"CheckingPersonal",
+						"PrepaidCard",
+						"SavingsBusiness",
+						"SavingsPersonal"
+					],
 					"type": "string"
 				},
 				"alias": {
