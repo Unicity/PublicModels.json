@@ -29,6 +29,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"
 		},
+		"currency": {
+			"pattern": "/^[A-Z]{3}$/",
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
@@ -55,6 +59,10 @@
 			],
 			"type": "integer"
 		},
+		"mandateReferenceId": {
+			"description": "used for debits (typically, it is the distributor id)",
+			"type": "string"
+		},
 		"message": {
 			"type": "string"
 		},
@@ -78,17 +86,14 @@
 			"properties": {
 				"accountEncrypted": {
 					"properties": {
-						"envelopeKeyEncBase64": {
-							"type": "string"
-						},
-						"iv": {
-							"type": "string"
-						},
-						"transmissionEncBase64": {
+						"encryptedObject": {
 							"type": "string"
 						}
 					},
 					"type": "object"
+				},
+				"accountHolder": {
+					"type": "string"
 				},
 				"accountNumber": {
 					"type": "string"
@@ -115,6 +120,30 @@
 				"bankName": {
 					"type": "string"
 				},
+				"bankPhone": {
+					"type": "string"
+				},
+				"bic": {
+					"description": "SWIFT code",
+					"type": "string"
+				},
+				"bin": {
+					"description": "bank number",
+					"type": "string"
+				},
+				"branchAddress": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+					"type": "object"
+				},
+				"branchName": {
+					"type": "string"
+				},
+				"branchNumber": {
+					"type": "string"
+				},
+				"branchPhone": {
+					"type": "string"
+				},
 				"checkDate": {
 					"pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
 					"type": "string"
@@ -127,13 +156,7 @@
 				},
 				"creditCardEncrypted": {
 					"properties": {
-						"envelopeKeyEncBase64": {
-							"type": "string"
-						},
-						"iv": {
-							"type": "string"
-						},
-						"transmissionEncBase64": {
+						"encryptedObject": {
 							"type": "string"
 						}
 					},
@@ -191,6 +214,15 @@
 					"type": "string"
 				},
 				"creditCardToken": {
+					"type": "string"
+				},
+				"iban": {
+					"type": "string"
+				},
+				"ibanMasked": {
+					"type": "string"
+				},
+				"ibanToken": {
 					"type": "string"
 				},
 				"iouGateway": {
