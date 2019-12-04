@@ -256,6 +256,10 @@
 					],
 					"type": "string"
 				},
+				"mandateReferenceId": {
+					"description": "used for debits (typically, it is the distributor id)",
+					"type": "string"
+				},
 				"payer": {
 					"type": "string"
 				},
