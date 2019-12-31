@@ -122,6 +122,25 @@
 		"email": {
 			"type": "string"
 		},
+		"employmentDetails": {
+			"properties": {
+				"employerAddress": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+					"type": "object"
+				},
+				"employerName": {
+					"type": "string"
+				},
+				"contactName": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+					"type": "object"
+				},
+				"contactNumber": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"enroller": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
 			"type": "object"
