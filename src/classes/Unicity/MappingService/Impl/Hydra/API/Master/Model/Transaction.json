@@ -54,6 +54,9 @@
 		"method": {
 			"enum": [
 				"BankDraft",
+				"BankDraftAlias",
+				"BankDraftEncrypted",
+				"BankDraftToken",
 				"BankWire",
 				"Cash",
 				"Change",
@@ -63,6 +66,7 @@
 				"CreditCardAlias",
 				"CreditCardEncrypted",
 				"CreditCardToken",
+				"PocketAdjustment",
 				"StoreCredit"
 			],
 			"type": "string"
@@ -249,6 +253,9 @@
 					"type": "string"
 				},
 				"payerId": {
+					"type": "string"
+				},
+				"pocketCode": {
 					"type": "string"
 				},
 				"routingNumber": {
