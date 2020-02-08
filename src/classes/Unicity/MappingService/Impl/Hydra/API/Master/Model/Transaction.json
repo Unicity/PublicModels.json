@@ -120,6 +120,9 @@
 					"description": "bank number",
 					"type": "string"
 				},
+				"body": {
+					"type": "string"
+				},
 				"branchAddress": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 					"type": "object"
