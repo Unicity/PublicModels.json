@@ -54,10 +54,10 @@
 					"type": "string"
 				},
 				"servingsPerContainer": {
-					"type": "integer"
+					"type": "number"
 				},
 				"servingSize": {
-					"type": "integer"
+					"type": "number"
 				},
 				"weightEach": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
@@ -105,6 +105,10 @@
 		},
 		"terms": {
 			"properties": {
+				"discountEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
 				"price": {
 					"description": "extended price",
 					"type": "number"
