@@ -23,6 +23,23 @@
 		},
 		"item": {
 			"properties": {
+				"dimensionsEach": {
+					"properties": {
+						"depth": {
+							"type": "number"
+						},
+						"length": {
+							"type": "number"
+						},
+						"unit": {
+							"type": "string"
+						},
+						"width": {
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
 				"href": {
 					"type": "string"
 				},
