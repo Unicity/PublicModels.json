@@ -28,6 +28,9 @@
 						"depth": {
 							"type": "number"
 						},
+						"height": {
+							"type": "number"
+						},
 						"length": {
 							"type": "number"
 						},
