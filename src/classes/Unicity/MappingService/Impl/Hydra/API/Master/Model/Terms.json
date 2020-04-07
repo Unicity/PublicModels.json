@@ -9,6 +9,10 @@
 				"amount": {
 					"type": "number"
 				},
+				"discount": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
 				"terms": {
 					"properties": {
 						"tax": {
