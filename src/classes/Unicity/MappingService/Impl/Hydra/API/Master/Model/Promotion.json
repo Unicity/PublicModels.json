@@ -49,6 +49,10 @@
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
 					"type": "object"
 				},
+				"eventSecurityContext": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventSecurityContext",
+					"type": "object"
+				},
 				"eventType": {
 					"type": "string"
 				}

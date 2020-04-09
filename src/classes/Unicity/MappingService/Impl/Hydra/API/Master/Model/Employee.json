@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"username": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

@@ -3,13 +3,28 @@
 		"Accept-Language": {
 			"type": "string"
 		},
+		"X-Original-Accept-Language": {
+			"type": "string"
+		},
 		"Affiliation": {
+			"type": "string"
+		},
+		"X-Request-UUID": {
+			"type": "string"
+		},
+		"User-Agent": {
 			"type": "string"
 		},
 		"Remote-Addr": {
 			"type": "string"
 		},
 		"Response-Addr": {
+			"type": "string"
+		},
+		"Data-Environment": {
+			"type": "string"
+		},
+		"Execution-Environment": {
 			"type": "string"
 		}
 	},
