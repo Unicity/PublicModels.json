@@ -136,13 +136,7 @@
 		},
 		"status": {
 			"enum": [
-				"Incomplete",
-				"Pending",
-				"Canceled",
-				"PaymentDeclined",
-				"Accepted",
-				"Printed",
-				"Shipped"
+				"Canceled"
 			],
 			"type": "string"
 		},
