@@ -16,7 +16,9 @@
 				"County",
 				"District",
 				"Federal",
-				"State"
+				"Country",
+				"State",
+				"Province"
 			],
 			"type": "string"
 		}
