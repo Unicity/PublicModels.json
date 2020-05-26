@@ -123,6 +123,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
 			"type": "object"
 		},
+		"shipment": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Shipment",
+			"type": "object"
+		},
 		"terms": {
 			"properties": {
 				"cvEach": {
