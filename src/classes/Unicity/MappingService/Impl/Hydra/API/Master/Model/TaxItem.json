@@ -18,7 +18,8 @@
 				"Federal",
 				"Country",
 				"State",
-				"Province"
+				"Province",
+				"Territory"
 			],
 			"type": "string"
 		}
