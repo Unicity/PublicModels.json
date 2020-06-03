@@ -101,9 +101,6 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
 			"type": "object"
 		},
-		"seed": {
-			"type": "integer"
-		},
 		"seller": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Seller",
 			"type": "object"
