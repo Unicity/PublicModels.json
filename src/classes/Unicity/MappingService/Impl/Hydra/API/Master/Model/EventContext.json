@@ -3,16 +3,16 @@
 		"Accept-Language": {
 			"type": "string"
 		},
-		"X-Original-Accept-Language": {
-			"type": "string"
-		},
 		"Affiliation": {
 			"type": "string"
 		},
-		"X-Request-UUID": {
+		"Data-Environment": {
 			"type": "string"
 		},
-		"User-Agent": {
+		"Date": {
+			"type": "string"
+		},
+		"Execution-Environment": {
 			"type": "string"
 		},
 		"Remote-Addr": {
@@ -21,10 +21,13 @@
 		"Response-Addr": {
 			"type": "string"
 		},
-		"Data-Environment": {
+		"User-Agent": {
 			"type": "string"
 		},
-		"Execution-Environment": {
+		"X-Original-Accept-Language": {
+			"type": "string"
+		},
+		"X-Request-UUID": {
 			"type": "string"
 		}
 	},
