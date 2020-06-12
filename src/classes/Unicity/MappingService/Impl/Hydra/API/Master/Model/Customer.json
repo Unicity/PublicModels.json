@@ -47,6 +47,24 @@
 			},
 			"type": "object"
 		},
+		"bankdepositaliases": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transaction",
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
+		"bankdraftaliases": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transaction",
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
 		"birthAddress": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"type": "object"
