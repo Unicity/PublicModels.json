@@ -99,7 +99,8 @@
 						"Friend",
 						"Parent",
 						"Sibling",
-						"Spouse"
+						"Spouse",
+						"None"
 					],
 					"type": "string"
 				}
