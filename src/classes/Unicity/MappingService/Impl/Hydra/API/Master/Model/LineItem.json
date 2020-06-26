@@ -116,6 +116,20 @@
 			},
 			"type": "object"
 		},
+		"quantityLimit": {
+			"properties": {
+				"quantityQuota": {
+					"type": "integer"
+				},
+				"timeFrameDays": {
+					"type": "integer"
+				},
+				"quantityOrdered": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
 		"quantityOnHand": {
 			"type": "integer"
 		},
