@@ -102,6 +102,13 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
 			"type": "object"
 		},
+		"status": {
+			"enum": [
+				"Active",
+				"Canceled"
+			],
+			"type": "string"
+		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
 			"type": "object"
