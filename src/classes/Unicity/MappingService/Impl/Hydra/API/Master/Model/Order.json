@@ -69,6 +69,9 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Invoice",
 			"type": "object"
 		},
+		"_isInitialOrder": {
+			"type": "boolean"
+		},
 		"limit": {
 			"type": "integer"
 		},

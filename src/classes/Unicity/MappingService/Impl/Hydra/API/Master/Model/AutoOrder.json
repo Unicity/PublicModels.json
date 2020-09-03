@@ -98,16 +98,16 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\ShippingMethod",
 			"type": "object"
 		},
-		"source": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
-			"type": "object"
-		},
 		"status": {
 			"enum": [
 				"Active",
 				"Canceled"
 			],
 			"type": "string"
+		},
+		"source": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
+			"type": "object"
 		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
