@@ -183,6 +183,24 @@
 			"pattern": "/^[0-9]{4}-[0-9]{2}$/",
 			"type": "string"
 		},
+		"ethnicity": {
+			"enum": [
+				"Chinese",
+				"English",
+				"French",
+				"German",
+				"Indian",
+				"Japanese",
+				"Korean",
+				"Latino",
+				"Malay",
+				"Other",
+				"Portuguese",
+				"Russian",
+				"Vietnamese"
+			],
+			"type": "string"
+		},
 		"events": {
 			"items": [
 				{
