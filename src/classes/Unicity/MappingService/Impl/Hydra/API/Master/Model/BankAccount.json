@@ -24,6 +24,8 @@
 			"enum": [
 				"CheckingBusiness",
 				"CheckingPersonal",
+				"EwalletBusiness",
+				"EwalletPersonal",
 				"PrepaidCard",
 				"SavingsBusiness",
 				"SavingsPersonal"
