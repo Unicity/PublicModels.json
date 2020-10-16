@@ -118,13 +118,13 @@
 		},
 		"quantityLimit": {
 			"properties": {
+				"quantityOrdered": {
+					"type": "integer"
+				},
 				"quantityQuota": {
 					"type": "integer"
 				},
 				"timeFrameDays": {
-					"type": "integer"
-				},
-				"quantityOrdered": {
 					"type": "integer"
 				}
 			},

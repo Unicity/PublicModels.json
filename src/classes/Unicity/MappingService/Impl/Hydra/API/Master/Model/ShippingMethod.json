@@ -1,5 +1,8 @@
 {
 	"properties": {
+		"class": {
+			"type": "string"
+		},
 		"href": {
 			"type": "string"
 		},
