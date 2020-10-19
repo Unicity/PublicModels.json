@@ -1,6 +1,6 @@
 {
 	"properties": {
-		"class": {
+		"carrier": {
 			"type": "string"
 		},
 		"href": {
