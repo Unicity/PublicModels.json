@@ -32,6 +32,9 @@
 		},
 		"referrer": {
 			"type": "string"
+		},
+		"version": {
+			"type": "string"
 		}
 	},
 	"type": "object"
