@@ -158,6 +158,10 @@
 					"description": "unit price",
 					"type": "number"
 				},
+				"priceLevel": {
+					"description": "price level override",
+					"type": "string"
+				},
 				"pv": {
 					"type": "number"
 				},
