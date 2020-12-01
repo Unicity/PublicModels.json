@@ -143,8 +143,17 @@
 		},
 		"terms": {
 			"properties": {
+				"cv": {
+					"description": "extended cv",
+					"type": "number"
+				},
 				"cvEach": {
 					"type": "number"
+				},
+				"discount": {
+					"description": "extended discount",
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
 				},
 				"discountEach": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
@@ -158,7 +167,7 @@
 					"description": "unit price",
 					"type": "number"
 				},
-				"priceLevel": {
+				"_priceLevel": {
 					"description": "price level override",
 					"type": "string"
 				},
