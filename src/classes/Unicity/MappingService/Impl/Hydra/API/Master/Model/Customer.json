@@ -185,18 +185,27 @@
 		},
 		"ethnicity": {
 			"enum": [
+				"American",
+				"Bangladeshi",
+				"Bruneian",
+				"Burmese",
 				"Chinese",
 				"English",
 				"French",
+				"Filipino",
 				"German",
 				"Indian",
+				"Indonesian",
 				"Japanese",
 				"Korean",
 				"Latino",
 				"Malay",
+				"New Zealander",
 				"Other",
 				"Portuguese",
 				"Russian",
+				"Singaporean",
+				"Thai",
 				"Vietnamese"
 			],
 			"type": "string"
@@ -247,9 +256,32 @@
 		"identification": {
 			"properties": {
 				"documentId": {
+					"description": "social security number, driver's license number, passport number",
 					"type": "string"
 				},
+				"documentImage": {
+					"properties": {
+						"data": {
+							"description": "binary data",
+							"type": "string"
+						},
+						"length": {
+							"description": "e.g. image size, number of bytes",
+							"type": "integer"
+						},
+						"mime": {
+							"description": "jpeg, gif, png",
+							"type": "string"
+						},
+						"name": {
+							"description": "file name",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
 				"documentType": {
+					"description": "government id, driver's license, passport",
 					"type": "string"
 				}
 			},
