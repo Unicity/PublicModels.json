@@ -3,6 +3,9 @@
 		"amount": {
 			"type": "number"
 		},
+		"description": {
+			"type": "string"
+		},
 		"jurisdiction": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"type": "object"

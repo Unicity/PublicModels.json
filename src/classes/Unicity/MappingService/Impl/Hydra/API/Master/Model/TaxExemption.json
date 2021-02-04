@@ -22,7 +22,10 @@
 				"County",
 				"District",
 				"Federal",
-				"State"
+				"Country",
+				"State",
+				"Province",
+				"Territory"
 			],
 			"type": "string"
 		}
