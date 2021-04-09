@@ -16,6 +16,14 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"
 		},
+		"_commands": {
+			"items": [
+				{
+					"type": "string"
+				}
+			],
+			"type": "array"
+		},
 		"creator": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"
