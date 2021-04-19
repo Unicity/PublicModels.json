@@ -80,6 +80,10 @@
 		"_isInitialOrder": {
 			"type": "boolean"
 		},
+		"itineraryId": {
+			"@todo": "make a private field",
+			"type": "string"
+		},
 		"limit": {
 			"type": "integer"
 		},

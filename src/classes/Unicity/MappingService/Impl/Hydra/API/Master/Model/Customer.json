@@ -480,6 +480,10 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\TaxTerms",
 			"type": "object"
 		},
+		"token": {
+			"@todo": "make a private field",
+			"type": "string"
+		},
 		"type": {
 			"delimiter": "|",
 			"enum": [
