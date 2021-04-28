@@ -181,6 +181,9 @@
 					"description": "extended price",
 					"type": "number"
 				},
+				"taxablePrice": {
+					"type": "number"
+				},
 				"taxablePriceEach": {
 					"type": "number"
 				},

@@ -34,9 +34,6 @@
 		},
 		"percentage": {
 			"type": "number"
-		},
-		"taxableAmount": {
-			"type": "number"
 		}
 	},
 	"type": "object"

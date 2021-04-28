@@ -13,7 +13,7 @@
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
 					"type": "object"
 				},
-				"taxableAmount": {
+				"taxablePrice": {
 					"type": "number"
 				},
 				"terms": {
