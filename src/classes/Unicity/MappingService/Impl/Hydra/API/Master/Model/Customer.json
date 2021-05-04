@@ -28,6 +28,14 @@
 						}
 					],
 					"type": "array"
+				},
+				"metrics": {
+					"properties": {
+						"totalFeelGreatItems": {
+							"type": "integer"
+						}
+					},
+					"type": "object"
 				}
 			},
 			"type": "object"
