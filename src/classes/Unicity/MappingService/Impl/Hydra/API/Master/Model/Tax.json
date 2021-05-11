@@ -23,6 +23,9 @@
 		"categoryDescription": {
 			"type": "string"
 		},
+		"categoryTitle": {
+			"type": "string"
+		},
 		"items": {
 			"items": [
 				{
