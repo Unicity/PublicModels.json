@@ -17,26 +17,6 @@
 			},
 			"type": "object"
 		},
-		"availability": {
-			"properties": {
-				"autoships": {
-					"type": "boolean"
-				},
-				"backorders": {
-					"type": "boolean"
-				},
-				"employees": {
-					"type": "boolean"
-				},
-				"onHold": {
-					"type": "boolean"
-				},
-				"web": {
-					"type": "boolean"
-				}
-			},
-			"type": "object"
-		},
 		"catalogSlide": {
 			"properties": {
 				"content": {
@@ -60,6 +40,26 @@
 		},
 		"item": {
 			"properties": {
+				"availability": {
+					"properties": {
+						"autoships": {
+							"type": "boolean"
+						},
+						"backorders": {
+							"type": "boolean"
+						},
+						"employees": {
+							"type": "boolean"
+						},
+						"onHold": {
+							"type": "boolean"
+						},
+						"web": {
+							"type": "boolean"
+						}
+					},
+					"type": "object"
+				},
 				"category": {
 					"properties": {
 						"code": {
