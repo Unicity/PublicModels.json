@@ -48,6 +48,9 @@
 		"mainPhone": {
 			"type": "string"
 		},
+		"notes": {
+			"type": "string"
+		},
 		"orders": {
 			"properties": {
 				"href": {
