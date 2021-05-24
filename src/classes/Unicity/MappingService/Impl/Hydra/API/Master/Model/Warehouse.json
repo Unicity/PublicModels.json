@@ -1,5 +1,34 @@
 {
+	"patternProperties": {
+		"/^warehouseName@([a-z]{2})$/": {
+			"type": "string"
+		}
+	},
 	"properties": {
+		"backorderBoxingAlgorithm": {
+			"properties": {
+				"targetPath": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"backorderTemplate": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
+			"type": "object"
+		},
+		"boxingAlgorithm": {
+			"properties": {
+				"targetPath": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"fileCopyTemplate": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
+			"type": "object"
+		},
 		"inventoryRecords": {
 			"properties": {
 				"href": {
@@ -7,6 +36,17 @@
 				}
 			},
 			"type": "object"
+		},
+		"invoiceTemplate": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
+			"type": "object"
+		},
+		"mainAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
+		},
+		"mainPhone": {
+			"type": "string"
 		},
 		"orders": {
 			"properties": {
@@ -16,6 +56,14 @@
 			},
 			"type": "object"
 		},
+		"packSlipTemplate": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
+			"type": "object"
+		},
+		"shippingLabelTemplate": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
+			"type": "object"
+		},
 		"shippingMethods": {
 			"properties": {
 				"href": {
@@ -23,6 +71,12 @@
 				}
 			},
 			"type": "object"
+		},
+		"warehouseName": {
+			"type": "string"
+		},
+		"warehouseUUID": {
+			"type": "string"
 		}
 	},
 	"type": "object"

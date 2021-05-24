@@ -1,0 +1,17 @@
+{
+	"properties": {
+		"isPrinter": {
+			"type": "boolean"
+		},
+		"printCount": {
+			"type": "number"
+		},
+		"targetURI": {
+			"type": "string"
+		},
+		"targetPath": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}
