@@ -208,6 +208,9 @@
 				"creditCardToken": {
 					"type": "string"
 				},
+				"ewalletToken": {
+					"type": "string"
+				},
 				"iban": {
 					"type": "string"
 				},

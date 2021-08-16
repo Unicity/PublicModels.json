@@ -244,6 +244,12 @@
 			],
 			"type": "string"
 		},
+		"hasAutoorder": {
+			"type": "boolean"
+		},
+		"hasFeelGreatAutoorder": {
+			"type": "boolean"
+		},
 		"highestRankShort": {
 			"type": "string"
 		},
@@ -328,6 +334,28 @@
 			"delimiter": "|",
 			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
+		},
+		"metrics": {
+			"items": [
+				{
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"qualified": {
+							"type": "boolean"
+						},
+						"requiredValue": {
+							"type": "integer"
+						},
+						"value": {
+							"type": "integer"
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
 		},
 		"metricsProfile": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\MetricsProfile",
