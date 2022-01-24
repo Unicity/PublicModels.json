@@ -99,6 +99,9 @@
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 					"type": "object"
 				},
+				"isHidden": {
+					"type": "boolean"
+				},
 				"kit": {
 					"properties": {
 						"child": {
