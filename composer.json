@@ -1,6 +1,6 @@
 {
-	"name": "Unicity/PublicModels",
-	"description": "A compilation of Unicity PHP modules.",
+	"name": "unicity/models",
+	"description": "A compilation of Unicity PHP models.",
 	"version": "0.0.1",
 	"type": "library",
 	"homepage": "http://github.com/Unicity/Modules.php",
