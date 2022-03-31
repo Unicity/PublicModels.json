@@ -1,0 +1,24 @@
+{
+	"name": "Unicity/PublicModels.json",
+	"description": "A compilation of Unicity PHP modules.",
+	"version": "0.0.1",
+	"type": "library",
+	"homepage": "http://github.com/Unicity/Modules.php",
+	"keywords": ["submodules", "vendor", "dependencies", "PublicModels.json"],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.0.0"
+	},
+	"require-dev": {
+		"php": ">=7.0.0"
+	},
+	"suggest": {
+		"ext-mbstring": "*"
+	},
+	"prefer-stable": true,
+	"autoload": {
+		"psr-0": {
+			"Unicity": "src/classes/"
+		}
+	}
+}
