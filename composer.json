@@ -1,5 +1,5 @@
 {
-	"name": "Unicity/PublicModels.json",
+	"name": "Unicity/PublicModels",
 	"description": "A compilation of Unicity PHP modules.",
 	"version": "0.0.1",
 	"type": "library",
