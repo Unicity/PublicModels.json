@@ -381,6 +381,10 @@
 		},
 		"password": {
 			"properties": {
+				"current": {
+					"description": "Used when changing password",
+					"type": "string"
+				},
 				"value": {
 					"type": "string"
 				}

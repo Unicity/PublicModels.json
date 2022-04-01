@@ -108,6 +108,9 @@
 				"alias": {
 					"type": "string"
 				},
+				"aliasIsAssociatedWithAutoOrder": {
+					"type": "boolean"
+				},
 				"bankName": {
 					"type": "string"
 				},
