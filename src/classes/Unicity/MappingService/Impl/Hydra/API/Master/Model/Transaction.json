@@ -6,6 +6,9 @@
 		"authorization": {
 			"type": "string"
 		},
+		"baseAmount": {
+			"type": "number|string"
+		},
 		"billToAddress": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"properties": {
@@ -32,6 +35,9 @@
 		"currency": {
 			"pattern": "/^[A-Z]{3}$/",
 			"type": "string"
+		},
+		"exchangeRate": {
+			"type": "number"
 		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
