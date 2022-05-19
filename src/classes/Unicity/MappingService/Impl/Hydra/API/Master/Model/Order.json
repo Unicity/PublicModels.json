@@ -167,6 +167,13 @@
 			],
 			"type": "string"
 		},
+		"taxMethod": {
+			"enum": [
+				"exclusive",
+				"inclusive"
+			],
+			"type": "string"
+		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
 			"type": "object"

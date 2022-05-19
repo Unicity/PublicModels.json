@@ -314,9 +314,11 @@
 					"type": "string"
 				},
 				"pv": {
+					"description": "extended pv",
 					"type": "number"
 				},
 				"pvEach": {
+					"description": "unit pv",
 					"type": "number"
 				},
 				"subtotal": {
@@ -324,9 +326,11 @@
 					"type": "number"
 				},
 				"taxablePrice": {
+					"description": "extended taxable price",
 					"type": "number"
 				},
 				"taxablePriceEach": {
+					"description": "unit taxable price",
 					"type": "number"
 				},
 				"tax": {
