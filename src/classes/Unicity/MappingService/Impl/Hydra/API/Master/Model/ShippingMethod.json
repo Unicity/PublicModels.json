@@ -3,6 +3,9 @@
 		"carrier": {
 			"type": "string"
 		},
+		"class": {
+			"type": "string"
+		},
 		"href": {
 			"type": "string"
 		},
