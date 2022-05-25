@@ -12,6 +12,12 @@
 		"type": {
 			"type": "string"
 		},
+		"warehouse": {
+			"id": {
+				"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+				"type": "object"
+			}
+		},
 		"warehouseUUID": {
 			"type": "string"
 		}
