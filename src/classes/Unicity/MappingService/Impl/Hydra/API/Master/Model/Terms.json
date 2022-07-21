@@ -14,7 +14,16 @@
 					"type": "object"
 				},
 				"taxablePrice": {
+					"description": "extended taxable price",
 					"type": "number"
+				},
+				"taxablePriceEach": {
+					"description": "unit taxable price",
+					"type": "number"
+				},
+				"taxEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
 				},
 				"terms": {
 					"properties": {
