@@ -25,6 +25,9 @@
 				"Territory"
 			],
 			"type": "string"
+		},
+		"taxedAmount": {
+			"type": "number"
 		}
 	},
 	"type": "object"
