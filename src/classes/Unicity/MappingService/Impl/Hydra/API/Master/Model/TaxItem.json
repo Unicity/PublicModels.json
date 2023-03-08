@@ -3,6 +3,9 @@
 		"amount": {
 			"type": "number"
 		},
+		"categoryDescription": {
+			"type": "string"
+		},
 		"description": {
 			"type": "string"
 		},
