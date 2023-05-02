@@ -2,6 +2,7 @@
 	"properties": {
 		"unit": {
 			"enum": [
+				"gm",
 				"lbs",
 				"kg"
 			],
