@@ -25,10 +25,7 @@
 			},
 			"type": "object"
 		},
-		"countryCode2": {
-			"type": "string"
-		},
-		"countryCode3": {
+		"countryCode": {
 			"type": "string"
 		},
 		"fileCopyTemplate": {
