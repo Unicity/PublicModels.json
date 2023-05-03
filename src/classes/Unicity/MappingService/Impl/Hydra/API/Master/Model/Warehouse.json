@@ -25,6 +25,9 @@
 			},
 			"type": "object"
 		},
+		"country": {
+			"type": "string"
+		},
 		"fileCopyTemplate": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Template",
 			"type": "object"
