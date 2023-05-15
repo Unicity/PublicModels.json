@@ -1,12 +1,12 @@
 {
 	"patternProperties": {
-		"/^firstName(@[a-z]{2})?$/": {
+		"/^firstName(@[a-z]{2,3})?$/": {
 			"type": "string"
 		},
-		"/^fullName(@[a-z]{2})?$/": {
+		"/^fullName(@[a-z]{2,3})?$/": {
 			"type": "string"
 		},
-		"/^lastName(@[a-z]{2})?$/": {
+		"/^lastName(@[a-z]{2,3})?$/": {
 			"type": "string"
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"patternProperties": {
-		"/^warehouseName(@[a-z]{2})?$/": {
+		"/^warehouseName(@[a-z]{2,3})?$/": {
 			"type": "string"
 		}
 	},
