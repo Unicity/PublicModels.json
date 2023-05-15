@@ -1,6 +1,6 @@
 {
 	"patternProperties": {
-		"/^warehouseName@([a-z]{2})$/": {
+		"/^warehouseName(@[a-z]{2})?$/": {
 			"type": "string"
 		}
 	},
@@ -77,9 +77,6 @@
 				}
 			},
 			"type": "object"
-		},
-		"warehouseName": {
-			"type": "string"
 		},
 		"warehouseUUID": {
 			"type": "string"
