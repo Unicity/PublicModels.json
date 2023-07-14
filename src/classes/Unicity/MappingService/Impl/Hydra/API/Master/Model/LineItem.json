@@ -72,12 +72,7 @@
 					"properties": {
 						"content": {
 							"patternProperties": {
-								"/^description@([a-z]{2})$/": {
-									"type": "string"
-								}
-							},
-							"properties": {
-								"description": {
+								"/^description(@[a-z]{2})?$/": {
 									"type": "string"
 								}
 							},
