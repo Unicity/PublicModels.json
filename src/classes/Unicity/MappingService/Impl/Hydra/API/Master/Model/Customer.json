@@ -441,6 +441,10 @@
 		"preferredLocale": {
 			"type": "string"
 		},
+		"preferredName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
 		"profilePicture": {
 			"properties": {
 				"href": {
