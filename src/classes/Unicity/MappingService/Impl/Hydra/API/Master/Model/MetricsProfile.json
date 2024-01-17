@@ -19,6 +19,9 @@
 		"cpv": {
 			"type": "integer"
 		},
+		"cqv": {
+			"type": "integer"
+		},
 		"gv": {
 			"type": "integer"
 		},
