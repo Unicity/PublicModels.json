@@ -89,6 +89,39 @@
 					},
 					"type": "object"
 				},
+				"encryptedApplePayPayment": {
+                    "properties": {
+                        "paymentData":{
+							"properties":{
+								"data": {
+									"type": "string"
+								},
+								"signature": {
+									"type": "string"
+								},
+								"version": {
+									"type": "string"
+								},
+								"header": {
+									"type": "object",
+									"properties": {
+										"publicKeyHash": {
+											"type": "string"
+										},
+										"ephemeralPublicKey": {
+											"type": "string"
+										},
+										"transactionId": {
+											"type": "string"
+										}
+									}
+                                },
+                                "type":"object"
+                            }
+                        }
+                    },
+                    "type": "object"
+                },
 				"accountHolder": {
 					"type": "string"
 				},
