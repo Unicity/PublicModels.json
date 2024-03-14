@@ -2,6 +2,10 @@
 	"items": [
 		{
 			"properties": {
+				"currencyCode": {
+					"pattern": "/^[A-Z]{3}$/",
+					"type": "string"
+				},
 				"earnings": {
 					"type": "number"
 				},
