@@ -8,9 +8,37 @@
 			"properties": {
 				"amount": {
 					"type": "number"
+				},
+				"discount": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
+				"taxablePrice": {
+					"description": "extended taxable price",
+					"type": "number"
+				},
+				"taxablePriceEach": {
+					"description": "unit taxable price",
+					"type": "number"
+				},
+				"taxEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
+				"terms": {
+					"properties": {
+						"tax": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
+							"type": "object"
+						}
+					},
+					"type": "object"
 				}
 			},
 			"type": "object"
+		},
+		"paidByCredit": {
+			"type": "number"
 		},
 		"period": {
 			"pattern": "/^[0-9]{4}-[0-9]{2}$/",
@@ -37,6 +65,9 @@
 			"type": "object"
 		},
 		"total": {
+			"type": "number"
+		},
+		"weight": {
 			"type": "number"
 		}
 	},

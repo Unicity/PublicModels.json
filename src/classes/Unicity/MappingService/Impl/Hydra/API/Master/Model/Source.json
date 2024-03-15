@@ -22,7 +22,7 @@
 				"Mail",
 				"Mobile",
 				"Phone",
-				"Overrride",
+				"Override",
 				"Template"
 			],
 			"type": "string"
@@ -31,10 +31,9 @@
 			"type": "string"
 		},
 		"referrer": {
-			"enum": [
-				"Marketing",
-				"Sales"
-			],
+			"type": "string"
+		},
+		"version": {
 			"type": "string"
 		}
 	},

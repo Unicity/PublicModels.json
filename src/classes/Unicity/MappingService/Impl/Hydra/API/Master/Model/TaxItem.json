@@ -3,6 +3,12 @@
 		"amount": {
 			"type": "number"
 		},
+		"categoryDescription": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
 		"jurisdiction": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
 			"type": "object"
@@ -16,9 +22,15 @@
 				"County",
 				"District",
 				"Federal",
-				"State"
+				"Country",
+				"State",
+				"Province",
+				"Territory"
 			],
 			"type": "string"
+		},
+		"taxedAmount": {
+			"type": "number"
 		}
 	},
 	"type": "object"

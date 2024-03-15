@@ -1,8 +1,30 @@
 {
 	"properties": {
+		"accountCodes": {
+			"properties": {
+				"cogsCode": {
+					"type": "string"
+				},
+				"inventoryCode": {
+					"type": "string"
+				},
+				"returnsCode": {
+					"type": "string"
+				},
+				"salesCode": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"catalogSlide": {
 			"properties": {
 				"content": {
+					"patternProperties": {
+						"/^description@([a-z]{2})$/": {
+							"type": "string"
+						}
+					},
 					"properties": {
 						"description": {
 							"type": "string"
@@ -18,12 +40,80 @@
 		},
 		"item": {
 			"properties": {
+				"availability": {
+					"properties": {
+						"autoships": {
+							"type": "boolean"
+						},
+						"backorders": {
+							"type": "boolean"
+						},
+						"employees": {
+							"type": "boolean"
+						},
+						"onHold": {
+							"type": "boolean"
+						},
+						"web": {
+							"type": "boolean"
+						}
+					},
+					"type": "object"
+				},
+				"category": {
+					"properties": {
+						"code": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"catalogSlide": {
+					"properties": {
+						"content": {
+							"patternProperties": {
+								"/^description(@[a-z]{2})?$/": {
+									"type": "string"
+								}
+							},
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"dateCreated": {
+					"pattern-disabled": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+					"type": "string"
+				},
+				"dimensionsEach": {
+					"properties": {
+						"depth": {
+							"type": "number"
+						},
+						"height": {
+							"type": "number"
+						},
+						"length": {
+							"type": "number"
+						},
+						"unit": {
+							"type": "string"
+						},
+						"width": {
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
 				"href": {
 					"type": "string"
 				},
 				"id": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 					"type": "object"
+				},
+				"isHidden": {
+					"type": "boolean"
 				},
 				"kit": {
 					"properties": {
@@ -40,6 +130,30 @@
 				},
 				"kitChildrenListIsEmpty": {
 					"type": "boolean"
+				},
+				"requires": {
+					"properties": {
+						"lotNumber": {
+							"type": "boolean"
+						},
+						"serialNumber": {
+							"type": "boolean"
+						}
+					},
+					"type": "object"
+				},
+				"servingsPerContainer": {
+					"type": "number"
+				},
+				"servingSize": {
+					"type": "number"
+				},
+				"taxedAs": {
+					"enum": [
+						"goods",
+						"service"
+					],
+					"type": "string"
 				},
 				"weightEach": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Weight",
@@ -61,6 +175,73 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Order",
 			"type": "object"
 		},
+		"pickLocation": {
+			"properties": {
+				"aisle": {
+					"type": "string"
+				},
+				"bay": {
+					"type": "string"
+				},
+				"lane": {
+					"type": "string"
+				},
+				"shelf": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"priceLevels": {
+			"items": [
+				{
+					"properties": {
+						"pricingCode": {
+							"type": "string"
+						},
+						"priceLevel": {
+							"type": "integer"
+						},
+						"values": {
+							"cvEach": {
+								"description": "PRICE_4: cv",
+								"type": "number"
+							},
+							"fgvEach": {
+								"description": "PRICE_6: feel great volume",
+								"type": "number"
+							},
+							"gcvEach": {
+								"description": "PRICE_7: generation cv",
+								"type": "number"
+							},
+							"manualAdjustment": {
+								"description": "PRICE_9: manual adjustment",
+								"type": "number"
+							},
+							"priceEach": {
+								"description": "PRICE_1: unit price",
+								"type": "number"
+							},
+							"pvEach": {
+								"description": "PRICE_2: personal/qualifying volume",
+								"type": "number"
+							},
+							"retailProfitEach": {
+								"description": "PRICE_5: retail profit",
+								"type": "number"
+							},
+							"taxablePriceEach": {
+								"description": "PRICE_3",
+								"type": "number"
+							}
+						}
+					},
+					"type": "object"
+				}
+			],
+			"type": "array"
+		},
 		"quantity": {
 			"type": "integer"
 		},
@@ -72,7 +253,24 @@
 				"quantityBackordered": {
 					"type": "integer"
 				},
+				"quantityCommitted": {
+					"type": "integer"
+				},
 				"quantitySellable": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
+		"quantityLimit": {
+			"properties": {
+				"quantityOrdered": {
+					"type": "integer"
+				},
+				"quantityQuota": {
+					"type": "integer"
+				},
+				"timeFrameDays": {
 					"type": "integer"
 				}
 			},
@@ -81,12 +279,41 @@
 		"quantityOnHand": {
 			"type": "integer"
 		},
+		"quantityPerCarton": {
+			"type": "integer"
+		},
 		"recurrence": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
 			"type": "object"
 		},
+		"reorderLevel": {
+			"type": "integer"
+		},
+		"shipment": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Shipment",
+			"type": "object"
+		},
+		"stockCode": {
+			"type": "string"
+		},
 		"terms": {
 			"properties": {
+				"cv": {
+					"description": "extended cv",
+					"type": "number"
+				},
+				"cvEach": {
+					"type": "number"
+				},
+				"discount": {
+					"description": "extended discount",
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
+				"discountEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
+					"type": "object"
+				},
 				"price": {
 					"description": "extended price",
 					"type": "number"
@@ -95,22 +322,54 @@
 					"description": "unit price",
 					"type": "number"
 				},
+				"_priceLevel": {
+					"description": "price level override",
+					"type": "string"
+				},
 				"pv": {
+					"description": "extended pv",
 					"type": "number"
 				},
 				"pvEach": {
+					"description": "unit pv",
 					"type": "number"
 				},
 				"subtotal": {
 					"description": "extended price",
 					"type": "number"
 				},
+				"taxablePrice": {
+					"description": "extended taxable price",
+					"type": "number"
+				},
+				"taxablePriceEach": {
+					"description": "unit taxable price",
+					"type": "number"
+				},
 				"tax": {
 					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Tax",
+					"type": "object"
+				},
+				"taxEach": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Value",
 					"type": "object"
 				}
 			},
 			"type": "object"
+		},
+		"warehouse": {
+			"propertiers": {
+				"warehouseName": {
+					"type": "string"
+				},
+				"warehouseUUID": {
+					"type": "integer"
+				}
+			},
+			"type": "object"
+		},
+		"_whileSuppliesLast": {
+			"type": "boolean"
 		}
 	},
 	"type": "object"

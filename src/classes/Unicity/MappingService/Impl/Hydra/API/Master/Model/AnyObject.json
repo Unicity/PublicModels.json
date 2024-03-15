@@ -1,0 +1,8 @@
+{
+	"patternProperties": {
+		"/^.+$/": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

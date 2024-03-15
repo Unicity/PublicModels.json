@@ -4,20 +4,66 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
 			"type": "object"
 		},
+		"active_legs": {
+			"type": "integer"
+		},
 		"apv": {
+			"type": "integer"
+		},
+		"compressed_gv": {
+			"type": "integer"
+		},
+		"compressed_tv": {
 			"type": "integer"
 		},
 		"cpv": {
 			"type": "integer"
 		},
+		"cqv": {
+			"type": "integer"
+		},
 		"gv": {
 			"type": "integer"
+		},
+		"gv_1st": {
+			"type": "integer"
+		},
+		"dateCalculated": {
+			"pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+			"type": "string"
 		},
 		"newCustomers": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Metric",
 			"type": "object"
 		},
 		"ov": {
+			"type": "integer"
+		},
+		"ov_apt1": {
+			"type": "integer"
+		},
+		"ov_leg1": {
+			"type": "integer"
+		},
+		"ov_leg1_apt_excluded": {
+			"type": "integer"
+		},
+		"ov_leg2": {
+			"type": "integer"
+		},
+		"ov_leg2_apt_excluded": {
+			"type": "integer"
+		},
+		"ov_leg2hc_pv_included": {
+			"type": "integer"
+		},
+		"ov_leg3hc_pv_excluded": {
+			"type": "integer"
+		},
+		"ov_leg3hc_pv_excluded_apt_excluded": {
+			"type": "integer"
+		},
+		"ov_leg3hc_pv_included": {
 			"type": "integer"
 		},
 		"period": {
@@ -40,6 +86,9 @@
 			"type": "object"
 		},
 		"tv": {
+			"type": "integer"
+		},
+		"tv_1st": {
 			"type": "integer"
 		}
 	},

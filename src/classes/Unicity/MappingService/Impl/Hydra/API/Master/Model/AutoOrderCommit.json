@@ -1,0 +1,99 @@
+{
+    "properties": {
+        "autoShips": {
+            "items": [
+                {
+                    "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrderTemplate",
+                    "type": "object"
+                }
+			],
+			"type": "array"
+        },
+        "commit": {
+            "properties": {
+                "accepted": {
+                    "type": "boolean"
+                },
+                "autorun": {
+                    "type": "boolean"
+                },
+                "calculated": {
+                    "type": "boolean"
+                },
+                "cancelled": {
+                    "type": "boolean"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "commission_date": {
+                    "pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+                    "type": "string"
+                },
+                "commission_end_date": {
+                    "pattern": "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/",
+                    "type": "string"
+                },
+                "completed_at": {
+                    "pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+                    "type": "string"
+                },
+                "created": {
+                    "pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+                    "type": "string"
+                },
+                "creator_username": {
+                    "type": "string"
+                },
+                "env": {
+                    "type": "string"
+                },
+                "hidden": {
+                    "type": "boolean"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "market": {
+                    "pattern": "/^[A-Z]{2}$/",
+                    "type": "string"
+                },
+                "orders_submitted": {
+                    "type": "boolean"
+                },
+                "processing": {
+                    "type": "boolean"
+                },
+                "ran_at": {
+                    "pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+                    "type": "string"
+                },
+                "runner_username": {
+                    "type": "string"
+                },
+                "template_ids": {
+                    "items": [
+                        {
+                            "type": "integer"
+                        }
+                    ],
+                    "type": "array"
+                },
+                "total": {
+                    "type": "number"
+                },
+                "uuid": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        },
+        "count": {
+            "type": "integer"
+        }
+    },
+    "type": "object"
+}

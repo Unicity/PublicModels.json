@@ -5,19 +5,34 @@
 		},
 		"availablePermissions": {
 			"properties": {
-				"customer": {
-					"type": "string"
-				},
-				"dscEmployee": {
-					"type": "string"
-				},
-				"employee": {
-					"type": "string"
-				},
 				"user": {
 					"type": "string"
+				},
+				"customer": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Link",
+					"type": "object"
+				},
+				"employee": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Employee",
+					"type": "object"
+				},
+				"dscEmployee": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Link",
+					"type": "object"
+				},
+				"elevations": {
+					"items": [
+						{
+							"type": "string"
+						}
+					],
+					"type": "array"
 				}
 			},
+			"type": "object"
+		},
+		"employee": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Employee",
 			"type": "object"
 		}
 	},

@@ -1,10 +1,13 @@
 {
 	"properties": {
 		"amount": {
-			"type": "number"
+			"type": "number|string"
 		},
 		"authorization": {
 			"type": "string"
+		},
+		"baseAmount": {
+			"type": "number|string"
 		},
 		"billToAddress": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
@@ -25,12 +28,41 @@
 		"billToPhone": {
 			"type": "string"
 		},
+		"creator": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
+			"type": "object"
+		},
+		"currency": {
+			"pattern": "/^[A-Z]{3}$/",
+			"type": "string"
+		},
+		"exchangeRate": {
+			"type": "number"
+		},
+		"id": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+			"type": "object"
+		},
+		"index": {
+			"description": "payment line number",
+			"type": "integer"
+		},
+		"installments": {
+			"type": "integer"
+		},
+		"mandateReferenceId": {
+			"description": "used for debits (typically, it is the distributor id)",
+			"type": "string"
+		},
 		"message": {
 			"type": "string"
 		},
 		"method": {
 			"enum": [
 				"BankDraft",
+				"BankDraftAlias",
+				"BankDraftEncrypted",
+				"BankDraftToken",
 				"BankWire",
 				"Cash",
 				"Change",
@@ -40,23 +72,112 @@
 				"CreditCardAlias",
 				"CreditCardEncrypted",
 				"CreditCardToken",
+				"EWallet",
+				"EWalletToken",
+				"PocketAdjustment",
 				"StoreCredit"
 			],
 			"type": "string"
 		},
 		"methodDetails": {
 			"properties": {
+				"accountEncrypted": {
+					"properties": {
+						"encryptedObject": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"encryptedApplePayPayment": {
+                    "properties": {
+                        "paymentData":{
+							"properties":{
+								"data": {
+									"type": "string"
+								},
+								"signature": {
+									"type": "string"
+								},
+								"version": {
+									"type": "string"
+								},
+								"header": {
+									"type": "object",
+									"properties": {
+										"publicKeyHash": {
+											"type": "string"
+										},
+										"ephemeralPublicKey": {
+											"type": "string"
+										},
+										"transactionId": {
+											"type": "string"
+										}
+									}
+                                },
+                                "type":"object"
+                            }
+                        }
+                    },
+                    "type": "object"
+                },
+				"accountHolder": {
+					"type": "string"
+				},
 				"accountNumber": {
 					"type": "string"
 				},
-				"alias": {
+				"accountNumberMasked": {
+					"type": "string"
+				},
+				"accountToken": {
+					"type": "string"
+				},
+				"accountType": {
 					"enum": [
-						"Primary",
-						"Secondary"
+						"CheckingBusiness",
+						"CheckingPersonal",
+						"PrepaidCard",
+						"SavingsBusiness",
+						"SavingsPersonal"
 					],
 					"type": "string"
 				},
+				"alias": {
+					"type": "string"
+				},
+				"aliasIsAssociatedWithAutoOrder": {
+					"type": "boolean"
+				},
 				"bankName": {
+					"type": "string"
+				},
+				"bankPhone": {
+					"type": "string"
+				},
+				"bic": {
+					"description": "SWIFT code",
+					"type": "string"
+				},
+				"bin": {
+					"description": "bank number",
+					"type": "string"
+				},
+				"body": {
+					"type": "string"
+				},
+				"branchAddress": {
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+					"type": "object"
+				},
+				"branchName": {
+					"type": "string"
+				},
+				"branchNumber": {
+					"type": "string"
+				},
+				"branchPhone": {
 					"type": "string"
 				},
 				"checkDate": {
@@ -71,13 +192,7 @@
 				},
 				"creditCardEncrypted": {
 					"properties": {
-						"envelopeKeyEncBase64": {
-							"type": "string"
-						},
-						"iv": {
-							"type": "string"
-						},
-						"transmissionEncBase64": {
+						"encryptedObject": {
 							"type": "string"
 						}
 					},
@@ -137,23 +252,17 @@
 				"creditCardToken": {
 					"type": "string"
 				},
-				"installments": {
-					"enum": [
-						0,
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9,
-						10,
-						11,
-						12
-					],
-					"type": "integer"
+				"ewalletToken": {
+					"type": "string"
+				},
+				"iban": {
+					"type": "string"
+				},
+				"ibanMasked": {
+					"type": "string"
+				},
+				"ibanToken": {
+					"type": "string"
 				},
 				"iouGateway": {
 					"type": "string"
@@ -186,10 +295,17 @@
 					],
 					"type": "string"
 				},
+				"mandateReferenceId": {
+					"description": "used for debits (typically, it is the distributor id)",
+					"type": "string"
+				},
 				"payer": {
 					"type": "string"
 				},
 				"payerId": {
+					"type": "string"
+				},
+				"pocketCode": {
 					"type": "string"
 				},
 				"routingNumber": {
@@ -204,11 +320,13 @@
 		"type": {
 			"enum": [
 				"AuthorizeAndCapture",
+				"Cancel",
 				"Capture",
 				"IOU",
 				"Record",
 				"record",
-				"Refund"
+				"Refund",
+				"Void"
 			],
 			"type": "string"
 		}

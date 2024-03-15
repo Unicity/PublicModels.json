@@ -1,7 +1,12 @@
 {
 	"properties": {
-		"records": {
-			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Achievements",
+		"items": {
+			"items": [
+				{
+					"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Achievement",
+					"type": "object"
+				}
+			],
 			"type": "array"
 		}
 	},

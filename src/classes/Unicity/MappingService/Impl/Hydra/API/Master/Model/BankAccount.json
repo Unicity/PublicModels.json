@@ -1,19 +1,38 @@
 {
 	"properties": {
+		"accountEncrypted": {
+			"properties": {
+				"encryptedObject": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
 		"accountHolder": {
 			"type": "string"
 		},
 		"accountNumber": {
 			"type": "string"
 		},
+		"accountNumberMasked": {
+			"type": "string"
+		},
+		"accountToken": {
+			"type": "string"
+		},
 		"accountType": {
 			"enum": [
 				"CheckingBusiness",
 				"CheckingPersonal",
+				"EwalletBusiness",
+				"EwalletPersonal",
 				"PrepaidCard",
 				"SavingsBusiness",
 				"SavingsPersonal"
 			],
+			"type": "string"
+		},
+		"alias": {
 			"type": "string"
 		},
 		"bankAddress": {
@@ -23,12 +42,20 @@
 		"bankName": {
 			"type": "string"
 		},
+		"bankPhone": {
+			"type": "string"
+		},
 		"bic": {
 			"description": "SWIFT code",
 			"type": "string"
 		},
 		"bin": {
+			"description": "bank number",
 			"type": "string"
+		},
+		"branchAddress": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+			"type": "object"
 		},
 		"branchName": {
 			"type": "string"
@@ -36,10 +63,26 @@
 		"branchNumber": {
 			"type": "string"
 		},
+		"branchPhone": {
+			"type": "string"
+		},
+		"effectiveDate": {
+			"type": "string"
+		},
 		"href": {
 			"type": "string"
 		},
 		"iban": {
+			"type": "string"
+		},
+		"ibanMasked": {
+			"type": "string"
+		},
+		"ibanToken": {
+			"type": "string"
+		},
+		"mandateReferenceId": {
+			"description": "used for debits (typically, it is the distributor id)",
 			"type": "string"
 		},
 		"routingNumber": {

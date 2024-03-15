@@ -8,11 +8,18 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventDetails",
 			"type": "object"
 		},
+		"eventExtras": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventExtras",
+			"type": "object"
+		},
 		"eventSecurityContext": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\EventSecurityContext",
 			"type": "object"
 		},
 		"eventType": {
+			"type": "string"
+		},
+		"eventTypeBare": {
 			"type": "string"
 		}
 	},

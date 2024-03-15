@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"href": {
+			"type": "string"
+		}
+	},
+	"type": "object"
+}

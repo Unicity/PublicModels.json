@@ -5,6 +5,25 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItems",
 			"type": "object"
 		},
+		"added_transactions": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Transactions",
+			"type": "object"
+		},
+		"additionalNotes": {
+			"type": "string"
+		},
+		"autoorder": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
+			"type": "object"
+		},
+		"_commands": {
+			"items": [
+				{
+					"type": "string"
+				}
+			],
+			"type": "array"
+		},
 		"creator": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Creator",
 			"type": "object"
@@ -33,6 +52,7 @@
 			"type": "string"
 		},
 		"fulfillmentStatus": {
+			"delimiter": "|",
 			"enum": [
 				"Unknown",
 				"Unfulfilled",
@@ -43,6 +63,12 @@
 			],
 			"type": "string"
 		},
+		"giftReceipt": {
+			"type": "boolean"
+		},
+		"href": {
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
@@ -50,6 +76,13 @@
 		"invoice": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Invoice",
 			"type": "object"
+		},
+		"_isInitialOrder": {
+			"type": "boolean"
+		},
+		"itineraryId": {
+			"@todo": "make a private field",
+			"type": "string"
 		},
 		"limit": {
 			"type": "integer"
@@ -59,13 +92,15 @@
 			"type": "object"
 		},
 		"market": {
-			"pattern": "/^[A-Z]{2}(\\|[A-Z]{2})*$/",
+			"delimiter": "|",
+			"pattern": "/^[A-Z]{2}$/",
 			"type": "string"
 		},
 		"notes": {
 			"type": "string"
 		},
 		"paymentStatus": {
+			"delimiter": "|",
 			"enum": [
 				"Unknown",
 				"Unpaid",
@@ -73,9 +108,12 @@
 				"PartiallyPaid",
 				"Paid",
 				"PartiallyRefunded",
-				"Refunded",
-				"Voided"
+				"Refunded"
 			],
+			"type": "string"
+		},
+		"period": {
+			"pattern": "/^[0-9]{4}-[0-9]{2}$/",
 			"type": "string"
 		},
 		"recurrence": {
@@ -115,6 +153,27 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",
 			"type": "object"
 		},
+		"status": {
+			"enum": [
+				"Active",
+				"Canceled"
+			],
+			"type": "string"
+		},
+		"taxedAs": {
+			"enum": [
+				"goods",
+				"service"
+			],
+			"type": "string"
+		},
+		"taxMethod": {
+			"enum": [
+				"exclusive",
+				"inclusive"
+			],
+			"type": "string"
+		},
 		"terms": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Terms",
 			"type": "object"
@@ -128,6 +187,7 @@
 			"type": "object"
 		},
 		"type": {
+			"delimiter": "|",
 			"enum": [
 				"Autoship",
 				"Order",
@@ -136,6 +196,10 @@
 				"RMA"
 			],
 			"type": "string"
+		},
+		"warehouse": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Warehouse",
+			"type": "object"
 		}
 	},
 	"type": "object"

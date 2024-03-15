@@ -30,6 +30,9 @@
 			],
 			"type": "string"
 		},
+		"href": {
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
@@ -94,6 +97,13 @@
 		"shippingMethod": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\ShippingMethod",
 			"type": "object"
+		},
+		"status": {
+			"enum": [
+				"Active",
+				"Canceled"
+			],
+			"type": "string"
 		},
 		"source": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Source",

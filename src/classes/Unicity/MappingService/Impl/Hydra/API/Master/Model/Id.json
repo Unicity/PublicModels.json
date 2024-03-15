@@ -12,10 +12,16 @@
 		"label": {
 			"type": "string"
 		},
+		"teller": {
+			"type": "integer"
+		},
 		"unicity": {
 			"type": "string"
 		},
 		"vendor": {
+			"type": "string"
+		},
+		"tax": {
 			"type": "string"
 		}
 	},

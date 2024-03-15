@@ -6,10 +6,28 @@
 		"Affiliation": {
 			"type": "string"
 		},
+		"Data-Environment": {
+			"type": "string"
+		},
+		"Date": {
+			"type": "string"
+		},
+		"Execution-Environment": {
+			"type": "string"
+		},
 		"Remote-Addr": {
 			"type": "string"
 		},
 		"Response-Addr": {
+			"type": "string"
+		},
+		"User-Agent": {
+			"type": "string"
+		},
+		"X-Original-Accept-Language": {
+			"type": "string"
+		},
+		"X-Request-UUID": {
 			"type": "string"
 		}
 	},

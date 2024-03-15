@@ -4,11 +4,17 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
 			"type": "object"
 		},
+		"href": {
+			"type": "string"
+		},
 		"id": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 			"type": "object"
 		},
 		"username": {
+			"type": "string"
+		},
+		"__verbatim": {
 			"type": "string"
 		}
 	},
