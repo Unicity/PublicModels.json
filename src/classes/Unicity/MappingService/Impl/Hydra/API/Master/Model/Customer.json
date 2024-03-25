@@ -456,6 +456,9 @@
 		"rankShort": {
 			"type": "string"
 		},
+		"referralCode": {
+			"type": "string"
+		},
 		"referralCount": {
 			"type": "integer"
 		},
