@@ -389,6 +389,10 @@
 		"orderCount": {
 			"type": "integer"
 		},
+		"ov": {
+			"description": "UnityOv, this field comes (at least) in the dbo.hydraGetAchievementHistory2 stored procedure, as CustomerQualificationVolume",
+			"type": "string"
+		},
 		"password": {
 			"properties": {
 				"current": {
