@@ -12,6 +12,12 @@
 		"location": {
 			"type": "string"
 		},
+		"service": {
+			"id": {
+				"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
+				"type": "object"
+			}
+		},
 		"type": {
 			"type": "string"
 		},
