@@ -389,6 +389,10 @@
 		"orderCount": {
 			"type": "integer"
 		},
+		"ov": {
+			"description": "UnityOv, this field comes (at least) in the dbo.hydraGetAchievementHistory2 stored procedure, as CustomerQualificationVolume",
+			"type": "string"
+		},
 		"password": {
 			"properties": {
 				"current": {
@@ -441,6 +445,10 @@
 		"preferredLocale": {
 			"type": "string"
 		},
+		"preferredName": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+			"type": "object"
+		},
 		"profilePicture": {
 			"properties": {
 				"href": {
@@ -450,6 +458,9 @@
 			"type": "object"
 		},
 		"rankShort": {
+			"type": "string"
+		},
+		"referralCode": {
 			"type": "string"
 		},
 		"referralCount": {

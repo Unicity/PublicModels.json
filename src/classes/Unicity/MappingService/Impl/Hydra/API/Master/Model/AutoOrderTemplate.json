@@ -1,0 +1,143 @@
+{
+    "properties": {
+        "commit_id": {
+			"type": "integer"
+		},
+        "created": {
+            "pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+            "type": "string"
+        },
+        "error": {
+            "type": "string"
+        },
+        "hidden": {
+            "type": "boolean"
+        },
+        "id": {
+			"type": "integer"
+		},
+        "modified": {
+            "pattern": "/^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\\.[0-9]+)?)?)?[+-][0-9]{2}:[0-9]{2})?)?$/",
+            "type": "string"
+        },
+        "order_pre_calc": {
+            "order": {
+                "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
+                "type": "object"
+            }
+        },
+        "order_post_calc": {
+            "order": {
+                "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
+                "type": "object"
+            }
+        },
+        "order_post_accept": {
+            "order": {
+                "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
+                "type": "object"
+            }
+        },
+        "processing": {
+            "type": "boolean"
+        },
+        "status": {
+            "type": "string"
+        },
+        "template_id": {
+			"type": "integer"
+		},
+        "template_local": {
+            "properties": {
+                "bankAccountAlias": {
+                    "type": "string"
+                },
+                "cardAlias": {
+                    "type": "string"
+                },
+                "currency": {
+                    "pattern": "/^[A-Z]{3}$/",
+                    "type": "string"
+                },
+                "customer": {
+                    "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Customer",
+                    "type": "object"
+                },
+                "items": [
+                    {
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "quantity": {
+                                "type": "integer"
+                            }
+                        },
+                        "type": "object"
+                    }
+                ],
+                "lastModified": {
+                    "type": "integer"
+                },
+                "lineId": {
+                    "type": "integer"
+                },
+                "market": {
+                    "pattern": "/^[A-Z]{2}$/",
+                    "type": "string"
+                },
+                "nextProcessMonth": {
+                    "pattern": "/^[0-9]{6}$/",
+                    "type": "integer"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "paymentMethod": {
+                    "type": "string"
+                },
+                "paymentType": {
+                    "type": "string"
+                },
+                "recurrenceDay": {
+                    "type": "integer"
+                },
+                "shippingMethodId": {
+                    "type": "integer"
+                },
+                "shippingMethodLocation": {
+                    "type": "string"
+                },
+                "shippingMethodType": {
+                    "type": "string"
+                },
+                "shipToAddress": {
+                    "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\PhysicalAddress",
+                    "type": "object"
+                },
+                "shipToEmail": {
+                    "type": "string"
+                },
+                "shipToName": {
+                    "$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\HumanName",
+                    "type": "object"
+                },
+                "shipToPhone": {
+                    "type": "string"
+                },
+                "shipVia": {
+                    "type": "string"
+                },
+                "templateId": {
+                    "type": "integer"
+                },
+                "warehouse": {
+                    "pattern": "/^[0-9]+$/",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}

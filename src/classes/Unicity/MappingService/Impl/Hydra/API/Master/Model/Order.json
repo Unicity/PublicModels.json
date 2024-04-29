@@ -196,6 +196,10 @@
 				"RMA"
 			],
 			"type": "string"
+		},
+		"warehouse": {
+			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Warehouse",
+			"type": "object"
 		}
 	},
 	"type": "object"
