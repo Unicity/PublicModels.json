@@ -115,8 +115,7 @@
 											"type": "string"
 										}
 									}
-								},
-								"type":"object"
+								}
 							}
 						}
 					},
@@ -146,8 +145,7 @@
 									"type": "string"
 								}
 							}
-						},
-						"type":"object"
+						}
 					},
 					"type": "object"
 				},
