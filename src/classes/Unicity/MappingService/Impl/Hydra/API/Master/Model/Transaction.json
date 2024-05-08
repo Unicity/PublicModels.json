@@ -115,13 +115,14 @@
 											"type": "string"
 										}
 									}
-								}
+								},
+								"type":"object"
 							}
 						}
 					},
 					"type": "object"
 				},
-				"encryptedGooglePayPayment": {
+				"encryptedPayment": {
 					"properties": {
 						"signature": {
 							"type": "string"
@@ -132,19 +133,17 @@
 						"protocolVersion": {
 							"type": "string"
 						},
-						"header": {
-							"type": "object",
-							"properties": {
-								"publicKeyHash": {
-									"type": "string"
-								},
-								"ephemeralPublicKey": {
-									"type": "string"
-								},
-								"transactionId": {
-									"type": "string"
-								}
-							}
+						"version": {
+							"type": "string"
+						},
+						"publicKeyHash": {
+							"type": "string"
+						},
+						"ephemeralPublicKey": {
+							"type": "string"
+						},
+						"transactionId": {
+							"type": "string"
 						}
 					},
 					"type": "object"
