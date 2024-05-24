@@ -201,6 +201,10 @@
 		"transactionId": {
 			"type": "string"
 		},
+		"transactionIndex": {
+			"description": "index of transaction at order creation",
+			"type": "integer"
+		},
 		"type": {
 			"enum": [
 				"AuthorizeAndCapture",
