@@ -36,6 +36,9 @@
 			"pattern": "/^[A-Z]{3}$/",
 			"type": "string"
 		},
+		"description": {
+			"type": "string"
+		},
 		"exchangeRate": {
 			"type": "number"
 		},
