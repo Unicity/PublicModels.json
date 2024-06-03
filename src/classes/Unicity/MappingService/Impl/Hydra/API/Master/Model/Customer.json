@@ -391,7 +391,7 @@
 		},
 		"ov": {
 			"description": "UnityOv, this field comes (at least) in the dbo.hydraGetAchievementHistory2 stored procedure, as CustomerQualificationVolume",
-			"type": "string"
+			"type": "number"
 		},
 		"password": {
 			"properties": {
