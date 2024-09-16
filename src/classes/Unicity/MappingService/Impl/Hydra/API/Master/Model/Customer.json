@@ -580,6 +580,49 @@
 		},
 		"workPhone": {
 			"type": "string"
+		},
+		"governmentInfo": {
+			"type": "object",
+			"description": "Government-related information for the customer",
+			"properties": {
+				"governmentIdPlace": {
+					"type": "string",
+					"description": "Place where the government ID was issued. Used for both customer and coapplicant. VN only."
+				},
+				"idIssuedDate": {
+					"type": "string",
+					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+					"description": "Date when the government ID was issued (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+				},
+				"contractNumber": {
+					"type": "string",
+					"description": "Contract number associated with the customer. Used for both customer and coapplicant. VN only."
+				},
+				"trainDate": {
+					"type": "string",
+					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+					"description": "Date when the customer received training (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+				},
+				"cardDate": {
+					"type": "string",
+					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+					"description": "Date associated with the customer's card (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+				},
+				"trainerName": {
+					"type": "string",
+					"description": "Name of the trainer who provided training to the customer. Used for both customer and coapplicant. VN only."
+				},
+				"memberCard": {
+					"type": "string",
+					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+					"description": "Date Member Card was given to the coapplicant. Used ONLY for coapplicant. VN only."
+				},
+				"trainingCardDate": {
+					"type": "string",
+					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+					"description": "Date customer received training card (YYYY-MM-DD). Used ONLY for customer. VN only."
+				}
+			}
 		}
 	},
 	"type": "object"
