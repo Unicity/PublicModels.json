@@ -258,6 +258,9 @@
 				},
 				"quantitySellable": {
 					"type": "integer"
+				},
+				"quantityShipped": {
+					"type": "integer"
 				}
 			},
 			"type": "object"
