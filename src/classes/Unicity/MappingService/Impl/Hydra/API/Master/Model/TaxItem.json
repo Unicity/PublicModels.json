@@ -1,12 +1,15 @@
 {
 	"properties": {
 		"amount": {
+			"description": "the sales tax",
 			"type": "number"
 		},
 		"categoryDescription": {
+			"description": "the product's tax code",
 			"type": "string"
 		},
 		"description": {
+			"description": "a description of the sales tax",
 			"type": "string"
 		},
 		"jurisdiction": {
@@ -14,6 +17,7 @@
 			"type": "object"
 		},
 		"percentage": {
+			"description": "the tax percentage",
 			"type": "number"
 		},
 		"type": {
@@ -30,6 +34,11 @@
 			"type": "string"
 		},
 		"taxedAmount": {
+			"description": "the taxable amount",
+			"type": "number"
+		},
+		"total": {
+			"description": "the total with tax",
 			"type": "number"
 		}
 	},
