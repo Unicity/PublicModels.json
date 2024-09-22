@@ -156,18 +156,18 @@
 			"type": "object"
 		},
 		"returns": {
-			"properties": {
-				"items": {
-					"items": [
-						{
-							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItem",
+			"items": [
+				{
+					"properties": {
+						"id": {
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Id",
 							"type": "object"
 						}
-					],
-					"type": "array"
+					},
+					"type": "object"
 				}
-			},
-			"type": "object"
+			],
+			"type": "array"
 		},
 		"seller": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Seller",
