@@ -16,6 +16,28 @@
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\AutoOrder",
 			"type": "object"
 		},
+		"availableActions": {
+			"items": [
+				{
+					"type": "string"
+				}
+			],
+			"type": "array"
+		},
+		"availableToReturn": {
+			"properties": {
+				"items": {
+					"items": [
+						{
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItem",
+							"type": "object"
+						}
+					],
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
 		"_commands": {
 			"items": [
 				{
@@ -66,6 +88,7 @@
 		"fulfillmentStatus": {
 			"delimiter": "|",
 			"enum": [
+				"Cancelled",
 				"Unknown",
 				"Unfulfilled",
 				"Processing",
@@ -130,6 +153,20 @@
 		},
 		"recurrence": {
 			"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\Recurrence",
+			"type": "object"
+		},
+		"returns": {
+			"properties": {
+				"items": {
+					"items": [
+						{
+							"$ref": "\\Unicity\\MappingService\\Impl\\Hydra\\API\\Master\\Model\\LineItem",
+							"type": "object"
+						}
+					],
+					"type": "array"
+				}
+			},
 			"type": "object"
 		},
 		"seller": {
