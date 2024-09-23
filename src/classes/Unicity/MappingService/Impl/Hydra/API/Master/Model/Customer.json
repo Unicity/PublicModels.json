@@ -587,40 +587,48 @@
 			"properties": {
 				"governmentIdPlace": {
 					"type": "string",
-					"description": "Place where the government ID was issued. Used for both customer and coapplicant. VN only."
+					"description": "Place where the government ID was issued.",
+					"FYI": "Used for both customer and coapplicant"
 				},
-				"idIssuedDate": {
+				"dateIdIssued": {
 					"type": "string",
 					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
-					"description": "Date when the government ID was issued (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+					"description": "Date when the government ID was issued (YYYY-MM-DD)",
+					"FYI": "Used for both customer and coapplicant"
 				},
 				"contractNumber": {
 					"type": "string",
-					"description": "Contract number associated with the customer. Used for both customer and coapplicant. VN only."
+					"description": "Contract number associated with the customer.",
+					"FYI": "Used for both customer and coapplicant"
 				},
-				"trainDate": {
+				"dateTrained": {
 					"type": "string",
 					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
-					"description": "Date when the customer received training (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+					"description": "Date when the customer received training (YYYY-MM-DD)",
+					"FYI": "Used for both customer and coapplicant"
 				},
-				"cardDate": {
+				"dateCardIssued": {
 					"type": "string",
 					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
-					"description": "Date associated with the customer's card (YYYY-MM-DD). Used for both customer and coapplicant. VN only."
+					"description": "Date associated with the customer's card (YYYY-MM-DD)",
+					"FYI": "Used for both customer and coapplicant"
 				},
 				"trainerName": {
 					"type": "string",
-					"description": "Name of the trainer who provided training to the customer. Used for both customer and coapplicant. VN only."
+					"description": "Name of the trainer who provided training to the customer.",
+					"FYI": "Used for both customer and coapplicant"
 				},
-				"memberCard": {
+				"dateMemberCardIssued": {
 					"type": "string",
 					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
-					"description": "Date Member Card was given to the coapplicant. Used ONLY for coapplicant. VN only."
+					"description": "Date Member Card was given to the coapplicant.",
+					"FYI": "Used ONLY for coapplicant"
 				},
-				"trainingCardDate": {
+				"dateTrainingCardIssued": {
 					"type": "string",
 					"pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
-					"description": "Date customer received training card (YYYY-MM-DD). Used ONLY for customer. VN only."
+					"description": "Date customer received training card (YYYY-MM-DD)",
+					"FYI": "Used ONLY for customer"
 				}
 			}
 		}
