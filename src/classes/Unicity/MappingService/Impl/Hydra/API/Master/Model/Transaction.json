@@ -3,9 +3,6 @@
 		"amount": {
 			"type": "number|string"
 		},
-		"isQuickPay": {
-			"type": "boolean"
-		},
 		"authorization": {
 			"type": "string"
 		},

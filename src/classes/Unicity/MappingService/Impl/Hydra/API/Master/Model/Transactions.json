@@ -8,6 +8,9 @@
 			},
 			"type": "object"
 		},
+		"isQuickPay": {
+			"type": "boolean"
+		},
 		"items": {
 			"items": [
 				{
