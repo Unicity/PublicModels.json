@@ -288,6 +288,9 @@
 				"ewalletToken": {
 					"type": "string"
 				},
+				"firstGatewayTransactionId": {
+					"type": "string"
+				},
 				"iban": {
 					"type": "string"
 				},
